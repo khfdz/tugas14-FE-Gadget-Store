@@ -1,15 +1,23 @@
-import './App.css'
-import Navbar from  './components/Navbar'
-import Home from './components/Home'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Home from './components/Home';
+
+import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
-
   return (
-    <>
-      <Navbar />
-      <Home />
-    </>
-  )
+    <Router>
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        {/* Tambahkan rute lainnya di sini */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

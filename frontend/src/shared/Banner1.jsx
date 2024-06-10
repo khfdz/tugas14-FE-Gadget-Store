@@ -2,7 +2,7 @@
 
 const Banner1 = ({imageBanner1, heading, subheading, btn1}) => {
     return (
-        <div className=''>
+        <div className='ml-12 mr-12'>
         <div className='mt-12 flex flex-col md:flex-row-reverse justify-between items-center gap-0'>
         <div>
             <img src={imageBanner1} alt="Iphone" className='lg:h-[596px]'/>

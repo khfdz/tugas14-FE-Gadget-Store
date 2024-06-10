@@ -5,7 +5,7 @@ const Shipping = ({
     iconHours, titleHours, textHours
 }) => {
     return (
-        <div className="bg-nt09 rounded-6xl md:p-10">
+        <div className="bg-nt09 rounded-6xl md:p-10 mr-10 ml-10">
             <div className="md:flex  items-center space-y-4 md:space-y-0 space-x-6 justify-between mr-10 ml-10">
                 <div className="flex items-start space-x-4">
                     <img src={iconShipping} alt="Shipping" className='lg:h-[56px] mt-2' />

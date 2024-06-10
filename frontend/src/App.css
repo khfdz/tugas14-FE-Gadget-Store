@@ -11,6 +11,10 @@ nav{
 }
 
 .gradientBg1 {
+  background: linear-gradient(60deg,  #1EFFE1 20%, #3F74EF 55% );
+}
+
+.gradientBg2 {
   background: linear-gradient(80deg,  #FF5454 33%, #FF986B 75%);
 }
 

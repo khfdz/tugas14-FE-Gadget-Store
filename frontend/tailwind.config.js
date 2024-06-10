@@ -52,7 +52,11 @@ export default {
         nt01: "#CCCDCF",
         nt00: "#F6F6F6",
 
-        btn1: "#00A3FF"
+        btn1: "#00A3FF",
+
+        colorPrimary1: "#00A3FF",
+
+        navActive: "#00A3FF"
 
     },
 
