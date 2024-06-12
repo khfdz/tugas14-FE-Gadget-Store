@@ -51,7 +51,9 @@ const Navbar = () => {
                     <div className='space-x-6 hidden md:flex '>
                         <img src={iconSearch} alt="Search Icon" className='w-8 inline-block ' />
                         <img src={iconProfil} alt="Profile Icon" className='w-8 inline-block ' />
-                        <img src={iconCart} alt="Cart Icon" className='w-8 inline-block items-center' />
+                        <NavLink to="/cart">
+                        <img src={iconCart}  alt="Cart Icon" className='w-8 inline-block items-center cursor-pointer' />
+                        </NavLink>
                     </div>
                     {/* Mobile Menu */}
                     <div className='md:hidden'>

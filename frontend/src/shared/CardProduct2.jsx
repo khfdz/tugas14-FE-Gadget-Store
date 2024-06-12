@@ -1,5 +1,6 @@
 import React from 'react';
 import imagePopularProduct from '../images/home-image/productPopular.png';
+import { Link } from 'react-router-dom';
 
 const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, products }) => {
     const startIndex = (currentPage - 1) * itemsPerPage;
@@ -8,6 +9,7 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, products })
 
     return (
         <div>
+            <Link to="/detail">
             <div className="grid grid-cols-3 gap-6 ml-24">
                 {currentItems.map(({ id, name, price, image }) => (
                     <div key={id} className="bg-nt09 rounded-4xl p-1 shadow-lg text-center">
@@ -17,6 +19,9 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, products })
                     </div>
                 ))}
             </div>
+            </Link>
+
+            
             <div className="flex justify-center mt-4">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
@@ -30,6 +35,7 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, products })
                     </button>
                 ))}
             </div>
+            
         </div>
     );
 };

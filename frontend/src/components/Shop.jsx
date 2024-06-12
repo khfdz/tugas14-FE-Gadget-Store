@@ -8,6 +8,7 @@ import BoxCategories from "../shared/BoxCategories"; // Mengimpor komponen BoxCa
 import imagePopularProduct from '../images/home-image/productPopular.png'; // Mengimpor gambar produk populer
 import Banner0 from '../shared/Banner0'; // Mengimpor komponen reusable Banner
 import '../style/Shop.css';
+import { Link } from 'react-router-dom';
 
 // Mendefinisikan informasi produk
 const productInfo = {

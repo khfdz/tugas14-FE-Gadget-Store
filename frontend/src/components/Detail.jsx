@@ -155,19 +155,19 @@ const Product = () => {
 
 
                 <div className="bg-nt09 p-4 rounded-3xl pt-0">
-                <img src={imagePopularProduct} alt="Popular Product" className="w-96 h-96" />
+                <img src={imagePopularProduct} alt="Popular Product" className="ml-14 w-96 h-96" />
                 <p className="text-center mb-4 text-3xl font-semibold">Samsung S23</p>
                 <p  className="text-center mb-4 text-2xl">IDR 12.999K</p>
                 </div>
 
                 <div className="bg-nt09 p-4 rounded-3xl pt-0">
-                <img src={imagePopularProduct} alt="Popular Product" className="w-96 h-96" />
+                <img src={imagePopularProduct} alt="Popular Product" className="ml-14 w-96 h-96" />
                 <p className="text-center mb-4 text-3xl font-semibold">Samsung S23</p>
                 <p  className="text-center mb-4 text-2xl">IDR 12.999K</p>
                 </div>
 
                 <div className="bg-nt09 p-4 rounded-3xl pt-0">
-                <img src={imagePopularProduct} alt="Popular Product" className="w-96 h-96" />
+                <img src={imagePopularProduct} alt="Popular Product" className="ml-14 w-96 h-96" />
                 <p className="text-center mb-4 text-3xl font-semibold">Samsung S23</p>
                 <p  className="text-center mb-4 text-2xl">IDR 12.999K</p>
                 </div>
