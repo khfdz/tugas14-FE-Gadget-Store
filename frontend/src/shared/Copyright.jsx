@@ -1,6 +1,9 @@
 import React from 'react';
+import iconWa from '../images/icon/iconWa.png'
+import iconIg from '../images/icon/iconIg.png'
+import iconFb from '../images/icon/iconFb.png'
 
-const Copyright = ({ iconWa, iconIg, iconFb }) => {
+const Copyright = () => {
     return (
         <div className=" px-4 py-12 bg-nt09">
             <div className="flex space-x-80 items-start  ml-20">

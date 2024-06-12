@@ -56,7 +56,14 @@ export default {
 
         colorPrimary1: "#00A3FF",
 
+        ellipse1: "#D9D9D9",
+        ellipse2: "#AD144E",
+        ellipse3: "#E59500",
+        ellipse4: "#0A568E",
+
         navActive: "#00A3FF"
+
+
 
     },
 

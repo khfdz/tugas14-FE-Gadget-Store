@@ -14,7 +14,7 @@ const PopularProduct = ({ imagePopularProduct }) => {
                 {/* Cards 2-7 */}
                 {[...Array(7)].map((_, index) => (
                     <div key={index} className="bg-nt09 rounded-6xl p-6 flex items-center justify-between flex-col m-4 ">
-                        <img src={imagePopularProduct} alt={`Product ${index + 2}`} className='lg:h-[282px] lg:w-[227px]'/>
+                        <img src={imagePopularProduct} alt={`Product ${index + 2}`} className=''/>
                         <div className="flex flex-col items-center">
                             <h2 className="font-semibold mb-2 text-3xl text-center">Samsung S23</h2>
                             <div className="flex items-center justify-center">

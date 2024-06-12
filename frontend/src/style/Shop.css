@@ -1,0 +1,27 @@
+/* Custom Checkbox Styling */
+.custom-checkbox {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #007BFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 2px;
+    transition: transform 0.2s ease-in-out;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    transform: translate(-50%, -50%) scale(1);
+}

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 import iconSearch from '../images/icon/mingcute_search-3-line.png';
 import iconProfil from '../images/icon/solar_user-circle-broken.png';
@@ -39,9 +38,7 @@ const Navbar = () => {
                                         to={path}
                                         className={({ isActive }) =>
                                             isActive
-                                                ? path === "/"
-                                                    ? 'text-navActive'
-                                                    : 'text-secondary'
+                                                ? 'text-navActive' // Assuming this is the active class
                                                 : 'text-white hover:text-secondary'
                                         }
                                     >
@@ -69,7 +66,9 @@ const Navbar = () => {
                     <NavLink
                         key={link}
                         to={path}
-                        className={({ isActive }) => isActive ? 'text-red-500' : 'hover:text-pr08'}
+                        className={({ isActive }) =>
+                            isActive ? 'text-red-500' : 'hover:text-pr08'
+                        }
                     >
                         {link}
                     </NavLink>

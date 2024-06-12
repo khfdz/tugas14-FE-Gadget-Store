@@ -17,9 +17,6 @@ import logoGoogle from '../images/home-image/sponsor/googleLogo.png'
 import logoSamsung from '../images/home-image/sponsor/samsungLogo.png'
 import logoSony from '../images/home-image/sponsor/sonyLogo.png'
 import logoXiaomi from '../images/home-image/sponsor/xiaomiLogo.png'
-import iconWa from '../images/icon/iconWa.png'
-import iconIg from '../images/icon/iconIg.png'
-import iconFb from '../images/icon/iconFb.png'
 
 
 
@@ -53,7 +50,7 @@ const Home = () => {
             <Banner3 ImageBanner3={ImageBanner3} titleBanner2="Apple <br/> Airpods" textBanner2="Up to 10% Discount" btnBanner2="Shop Now"/>
             <Sponsor logoApple={logoApple} logoGoogle={logoGoogle} logoSamsung={logoSamsung} logoSony={logoSony} logoXiaomi={logoXiaomi} />
             <News />
-            <Copyright iconWa={iconWa} iconIg={iconIg} iconFb={iconFb}/>
+            <Copyright/>
             </div>
     )
 }
