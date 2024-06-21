@@ -11,7 +11,7 @@ const Banner0 = ({ title, breadcrumbs }) => {
                         <React.Fragment key={index}>
                             <p>{breadcrumb}</p>
                             {index < breadcrumbs.length - 1 && (
-                                <img src={iconRight} alt="Right Icon" className="mx-2 w-6 h-6" />
+                                <img src={iconRight} alt="Right Icon" className="mx-2 w-10" />
                             )}
                         </React.Fragment>
                     ))}

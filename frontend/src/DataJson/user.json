@@ -1,0 +1,12 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "email": "khfdz@gmail.com",
+        "phone": "082260423997",
+        "password": "123456",
+        "confirmPassword": "123456"
+      }
+    ]
+  }
+  

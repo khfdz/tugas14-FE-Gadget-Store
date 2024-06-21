@@ -19,8 +19,9 @@ nav{
 }
 
 .btnPrimary{
-  @apply py-2 px-8 bg-btn1 text-nt00 rounded-4xl hover:bg-pr08 transition-all duration-300 
+  @apply  py-2 px-8 bg-btn1 text-nt00 rounded-4xl hover:bg-pr08 transition-all duration-300 
 }
+
 .btnSecondary{
 @apply py-2 px-8 bg-nt00 text-nt00 rounded-4xl hover:bg-pr08 transition-all duration-300 
 }

@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from 'react-router-dom';
+
 const Banner2 = ({ imageBanner2, titleBanner2, textBanner2, btnBanner2 }) => {
     return (
         <div className='mt-14 ml-12 mr-12'>
@@ -10,7 +13,9 @@ const Banner2 = ({ imageBanner2, titleBanner2, textBanner2, btnBanner2 }) => {
                     <h1 className='md:text-4xl  font-small mb-6 mt-6 leading-relaxed'>{textBanner2}</h1>
 
                     <div>
-                        <button className='btnSecondary h-14 w-52 '>{btnBanner2}</button>
+                        <Link to ="/detail/17">
+                        <button className='btnSecondary h-14 w-52 text-3xl'>{btnBanner2}</button>
+                        </Link>
                     </div>
                 </div>
             </div>

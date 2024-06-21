@@ -6,6 +6,7 @@ import logoXiaomi from '../images/home-image/sponsor/xiaomiLogo.png'
 
 
 
+
 const Sponsor = () => {
     return (
         <div className="bg-nt09 md:p-0 mt-20 h-44 ">

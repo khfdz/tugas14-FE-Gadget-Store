@@ -37,7 +37,7 @@ const Home = () => {
     return (
         <div className="">
             <Navbar />
-            <Banner1 imageBanner1={imageBanner1} heading="From IDR. 19.000.000" subheading="iPhone 14 Pro Max" btn1="Buy Now"  />
+            <Banner1 imageBanner1={imageBanner1} heading="From IDR. 16.499.000" subheading="iPhone 14 Pro Max" btn1="Buy Now"  />
             <Shipping 
             iconShipping={iconShipping} titleShipping="Free Shipping" textShipping="Free Shipping on all ID orders"
             iconRefund={iconRefund} titleRefund="100% Moneyback" textRefund="You have 7 days to return"
@@ -46,7 +46,7 @@ const Home = () => {
             />
             <CardProduct1 imageMacos={imageMacos} imagePB={imagePB} imagePS5={imagePS5} imageSamsungWatch={imageSamsungWatch} imageAirPods={imageAirPods} iconRight={iconRight}/>
             <Banner2 imageBanner2={imageBanner2} titleBanner2="Google <br/> Products" textBanner2="Up to 10% Discount" btnBanner2="Shop Now"/>
-            <PopularProduct imagePopularProduct={imagePopularProduct}/>
+            <PopularProduct />
             <Banner3 ImageBanner3={ImageBanner3} titleBanner2="Apple <br/> Airpods" textBanner2="Up to 10% Discount" btnBanner2="Shop Now"/>
             <Sponsor logoApple={logoApple} logoGoogle={logoGoogle} logoSamsung={logoSamsung} logoSony={logoSony} logoXiaomi={logoXiaomi} />
             <News />

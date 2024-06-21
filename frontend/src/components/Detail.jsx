@@ -1,185 +1,155 @@
-import Navbar from "../shared/Navbar";
-import Banner0 from "../shared/Banner0";
-import imagePopularProduct from "../images/home-image/productPopular.png";
-import Copyright from "../shared/Copyright";
-import iconStar from "../images/icon/iconStar.png";
+import React, { useState, useEffect, useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import Navbar from '../shared/Navbar';
+import Banner0 from '../shared/Banner0';
+import productsData from '../DataJson/product.json';
+import ProductImage from '../shared/ProductImage';
+import ProductDescription from '../shared/ProductDescription';
+import ProductSpecifications from '../shared/ProductSpecifications';
+import ReviewSection from '../shared/ReviewSection';
+import RelatedProduct from '../shared/RelatedProduct';
+import Copyright from '../shared/Copyright';
+import { UserContext } from '../context/UserContext';
 
-const Product = () => {
+const Detail = () => {
+    const { id } = useParams();
+    const [product, setProduct] = useState(null);
+    const [selectedImage, setSelectedImage] = useState('');
+    const [startIndex, setStartIndex] = useState(0);
+    const [selectedColor, setSelectedColor] = useState('');
+    const [selectedStorage, setSelectedStorage] = useState('');
+    const [selectedProcessor, setSelectedProcessor] = useState('');
+    const [totalPrice, setTotalPrice] = useState(0);
+
+    const { user } = useContext(UserContext);
+
+    useEffect(() => {
+        const foundProduct = productsData.products.find(product => product.id === parseInt(id));
+        if (foundProduct) {
+            setProduct(foundProduct);
+            setSelectedImage(foundProduct.image[0]);
+            setStartIndex(0);
+            setTotalPrice(foundProduct.price);
+
+            // Apply discount logic based on brand and category
+            if (foundProduct.brand.toLowerCase() === 'apple' && foundProduct.category.toLowerCase() === 'audio') {
+                const discountedPrice = foundProduct.price * 0.9;
+                setTotalPrice(discountedPrice);
+            }
+        } else {
+            setProduct(null);
+        }
+    }, [id]);
+
+    const handleClickImage = (img) => {
+        setSelectedImage(img);
+        const newIndex = product.image.indexOf(img);
+        if (newIndex !== startIndex) {
+            const newImagesToShow = [...product.image];
+            const movedImage = newImagesToShow.splice(newIndex, 1);
+            newImagesToShow.splice(0, 0, movedImage[0]);
+            setStartIndex(0);
+            setProduct({ ...product, image: newImagesToShow });
+        }
+    };
+
+    const handleColorClick = (colorName) => {
+        setSelectedColor(colorName);
+    };
+
+    const handleStorageClick = (storage) => {
+        if (storage === selectedStorage) {
+            return;
+        }
+        
+        // Update totalPrice based on selected storage price
+        const prevStorage = product.specifications.storage.items.find(item => item.name === selectedStorage);
+        const newStorage = product.specifications.storage.items.find(item => item.name === storage);
+        
+        let updatedPrice = totalPrice;
+        
+        if (prevStorage) {
+            updatedPrice -= prevStorage.price;
+        }
+        
+        if (newStorage) {
+            updatedPrice += newStorage.price;
+        }
+
+        setSelectedStorage(storage);
+        setTotalPrice(updatedPrice);
+    };
+
+    const handleProcessorClick = (processorName) => {
+        if (processorName === selectedProcessor) {
+            return;
+        }
+        
+        // Update totalPrice based on selected processor price
+        const prevProcessor = product.specifications.processor.items.find(item => item.name === selectedProcessor);
+        const newProcessor = product.specifications.processor.items.find(item => item.name === processorName);
+        
+        let updatedPrice = totalPrice;
+        
+        if (prevProcessor) {
+            updatedPrice -= prevProcessor.price;
+        }
+        
+        if (newProcessor) {
+            updatedPrice += newProcessor.price;
+        }
+
+        setSelectedProcessor(processorName);
+        setTotalPrice(updatedPrice);
+    };
+
+    const imagesToShow = product ? product.image.slice(startIndex, startIndex + 4) : [];
+
+    if (!product) {
+        return <div>Product not found</div>;
+    }
+
+    // Console log to check if user is logged in
+    console.log('Nama User Login:', user ? user.id : 'Belum login');
+    console.log('Nama User email:', user ? user.email : 'Belum login');
+    console.log('Nama User phone:', user ? user.phone : 'Belum login');
+
     return (
         <div>
             <Navbar />
-            <Banner0 title="Product" breadcrumbs={['Home', 'Product', 'Samsung S23']} />
+            <Banner0 title="Product" breadcrumbs={['Home', 'Product', product.name]} />
 
             <div className="grid grid-cols-2 justify-center ml-24">
-                
-                <div>
-                    <img src={imagePopularProduct} alt="Popular Product" className="" />
-                <div className="grid grid-cols-3">
-                    <img src={imagePopularProduct} alt="Popular Product" className="" />
-                    <img src={imagePopularProduct} alt="Popular Product" className="" />
-                    <img src={imagePopularProduct} alt="Popular Product" className="" />
-                </div>
-                </div>
-                        
-                
-                
+                <ProductImage
+                    selectedImage={selectedImage}
+                    imagesToShow={imagesToShow}
+                    handleClickImage={handleClickImage}
+                />
 
-                <div className="ml-10">
-                    <p className="text-7xl font-semibold mb-8">Samsung S23</p>
-                    <p className="text-5xl font-small mb-8">IDR 12.999.000</p>
-                    <p className="text-2xl font-small pr-20 tracking-wider leading-relaxed text-justify">
-                        Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Magna sit amet purus gravida quis blandit turpis cursus in. Sagittis eu volutpat odio facilisis. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Sapien faucibus et molestie ac feugiat. Quis risus sed vulputate odio ut. Scelerisque fermentum dui faucibus in ornare quam viverra. Aliquet sagittis id consectetur purus ut faucibus. Vitae tempus quam pellentesque nec nam aliquam sem.
-                    </p>
-
-                    <div className="grid grid-cols-2">
-                    <div className="mt-4">
-                        <p className="font-small text-5xl mt-8 mb-4">Color</p>
-                        <div className="flex gap-6">
-                            <span className="block w-14 h-14 bg-ellipse1 rounded-full cursor-pointer"></span>
-                            <span className="block w-14 h-14 bg-ellipse2 rounded-full cursor-pointer"></span>
-                            <span className="block w-14 h-14 bg-ellipse3 rounded-full cursor-pointer"></span>
-                            <span className="block w-14 h-14 bg-ellipse4 rounded-full cursor-pointer"></span>
-                        </div>
-                    </div>
-
-                    <div className="mt-4 mb-12">
-                        <p className="font-small text-5xl mt-8 mb-4 mt-4">Storage</p>
-                        <div className="flex gap-6 text-2xl">
-                            <span className="block w-22  px-4 py-2 bg-nt00 text-black cursor-pointer rounded-xl">128GB</span>
-                            <span className="block px-4 py-2 bg-nt00 text-black cursor-pointer rounded-xl">256GB</span>
-                            <span className="block px-4 py-2 bg-nt00 text-black cursor-pointer rounded-xl">512GB</span>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div className="mt-4 flex grid grid-cols-2 ">
-    <label className="flex  items-center bg-nt00 rounded-full w-80 h-20 justify-between text-3xl">
-        <button className="flex items-center justify-center bg-colorPrimary1 rounded-full w-20 h-20 text-6xl">-</button>
-        <p className="text-black">1</p>
-        <button className="flex items-center justify-center bg-colorPrimary1 rounded-full w-20 h-20 text-5xl">+</button>
-    </label>
-    <button className="px-4 py-2 bg-colorPrimary1 rounded-3xl text-3xl text-white rounded mr-20">Add to Cart</button>
-</div>
-
-
-
-                </div>
+                <ProductDescription
+                    product={product}
+                    totalPrice={totalPrice}
+                    selectedColor={selectedColor}
+                    selectedStorage={selectedStorage}
+                    selectedProcessor={selectedProcessor}
+                    handleColorClick={handleColorClick}
+                    handleStorageClick={handleStorageClick}
+                    handleProcessorClick={handleProcessorClick}
+                    user={user}
+                    
+                />
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mt-8 ml-24">
-                <div>
-                    <p className="font-semibold text-4xl mb-4">Specification</p>
-                    <p className="text-2xl font-small pr-20 tracking-wider leading-relaxed text-justify">
-                        Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Id eu nisl nunc mi ipsum faucibus vitae aliquet. Magna sit amet purus gravida quis blandit turpis cursus in. Sagittis eu volutpat odio facilisis. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Sapien faucibus et molestie ac feugiat. <br/> Quis risus sed vulputate odio ut. Scelerisque fermentum dui faucibus in ornare quam viverra. Aliquet sagittis id consectetur purus ut faucibus. Vitae tempus quam pellentesque nec nam aliquam sem.
-                    </p>
-                </div>
-
-                <div>
-                    <div className="flex justify-between">
-                        <p className="font-semibold text-4xl mb-4 ml-24">Review</p>
-                        
-                    </div>
-
-                <div className="bg-nt09 p-4 rounded-3xl ml-24 mr-24 mb-4">
-                    <div className="grid grid-cols-2 flex items-center justify-between ">
-    <div className="flex items-center ">
-        <p className="font-semibold mr-2 text-3xl mb-4">John Doe</p>
-
-    </div>
-    <div>
-        <div className="flex   justify-end mb-4">
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-        </div>
-    </div>
-
-</div>
-<p className="mt-2 text-2xl">Goods as ordered and fast delivery, recommended seller</p>
-</div>
-
-<div className="bg-nt09 p-4 rounded-3xl ml-24 mr-24 mb-4">
-                    <div className="grid grid-cols-2 flex items-center justify-between ">
-    <div className="flex items-center ">
-        <p className="font-semibold mr-2 text-3xl mb-4">John Doe</p>
-
-    </div>
-    <div>
-        <div className="flex   justify-end mb-4">
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-        </div>
-    </div>
-
-</div>
-<p className="mt-2 text-2xl">Goods as ordered and fast delivery, recommended seller</p>
-</div>
-
-<div className="bg-nt09 p-4 rounded-3xl ml-24 mr-24 mb-4">
-                    <div className="grid grid-cols-2 flex items-center justify-between ">
-    <div className="flex items-center ">
-        <p className="font-semibold mr-2 text-3xl mb-4">John Doe</p>
-
-    </div>
-    <div>
-        <div className="flex   justify-end mb-4">
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-            <img src={iconStar} alt="Star" className="w-8 h-8" />
-        </div>
-    </div>
-
-</div>
-<p className="mt-2 text-2xl">Goods as ordered and fast delivery, recommended seller</p>
-</div>
-
-                </div>
+            <div className='grid grid-cols-2 ml-24'>
+                <ProductSpecifications product={product} />
+                <ReviewSection productId={product.id} />
             </div>
 
-           
-                
-            <div className="grid grid-cols-4 gap-6 ml-24 items-center mt-14 mb-14 mr-24">
-
-                <div className="">
-                <p className="font-semibold text-6xl">Related <br/> Products</p>
-                <button className="btnPrimary w-72 h-16 mt-4 text-3xl">View More</button>
-
-                </div>
-
-
-                <div className="bg-nt09 p-4 rounded-3xl pt-0">
-                <img src={imagePopularProduct} alt="Popular Product" className="ml-14 w-96 h-96" />
-                <p className="text-center mb-4 text-3xl font-semibold">Samsung S23</p>
-                <p  className="text-center mb-4 text-2xl">IDR 12.999K</p>
-                </div>
-
-                <div className="bg-nt09 p-4 rounded-3xl pt-0">
-                <img src={imagePopularProduct} alt="Popular Product" className="ml-14 w-96 h-96" />
-                <p className="text-center mb-4 text-3xl font-semibold">Samsung S23</p>
-                <p  className="text-center mb-4 text-2xl">IDR 12.999K</p>
-                </div>
-
-                <div className="bg-nt09 p-4 rounded-3xl pt-0">
-                <img src={imagePopularProduct} alt="Popular Product" className="ml-14 w-96 h-96" />
-                <p className="text-center mb-4 text-3xl font-semibold">Samsung S23</p>
-                <p  className="text-center mb-4 text-2xl">IDR 12.999K</p>
-                </div>
-
-
-              
-                </div>
-        
+            <RelatedProduct productsData={productsData} brand={product.brand} productId={product.id} category={product.category} />
 
             <Copyright />
         </div>
     );
 };
 
-export default Product;
+export default Detail;

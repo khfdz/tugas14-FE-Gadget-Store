@@ -1,0 +1,524 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "productId": 1,
+            "name": "John Doe",
+            "comment": "Goods as ordered and fast delivery, recommended seller",
+            "stars": 5
+        },
+        {
+            "id": 2,
+            "productId": 1,
+            "name": "Jane Smith",
+            "comment": "Great product quality, will buy again",
+            "stars": 4
+        },
+        {
+            "id": 3,
+            "productId": 1,
+            "name": "Alice Johnson",
+            "comment": "Good service, but shipping took a bit long",
+            "stars": 3
+        },
+        {
+            "id": 4,
+            "productId": 1,
+            "name": "Bob Brown",
+            "comment": "Excellent customer service, fast response",
+            "stars": 5
+        },
+        {
+            "id": 5,
+            "productId": 1,
+            "name": "Eve Williams",
+            "comment": "Product arrived damaged, but was quickly replaced",
+            "stars": 2
+        },
+        {
+            "id": 6,
+            "productId": 2,
+            "name": "Charlie Davis",
+            "comment": "Average product, nothing special",
+            "stars": 3
+        },
+        {
+            "id": 7,
+            "productId": 2,
+            "name": "David Wilson",
+            "comment": "Very satisfied with the purchase",
+            "stars": 5
+        },
+        {
+            "id": 8,
+            "productId": 2,
+            "name": "Emma Thompson",
+            "comment": "Fast delivery and good packaging",
+            "stars": 4
+        },
+        {
+            "id": 9,
+            "productId": 2,
+            "name": "Frank White",
+            "comment": "The product was exactly as described",
+            "stars": 5
+        },
+        {
+            "id": 10,
+            "productId": 2,
+            "name": "Grace Clark",
+            "comment": "Highly recommend this seller",
+            "stars": 5
+        },
+        {
+            "id": 11,
+            "productId": 3,
+            "name": "Hannah Scott",
+            "comment": "Product quality could be better",
+            "stars": 2
+        },
+        {
+            "id": 12,
+            "productId": 3,
+            "name": "Ian Baker",
+            "comment": "Great value for the price",
+            "stars": 4
+        },
+        {
+            "id": 13,
+            "productId": 3,
+            "name": "Jack Harris",
+            "comment": "Had some issues with the order, but was resolved quickly",
+            "stars": 3
+        },
+        {
+            "id": 14,
+            "productId": 3,
+            "name": "Kelly Murphy",
+            "comment": "The product didn't meet my expectations",
+            "stars": 2
+        },
+        {
+            "id": 15,
+            "productId": 3,
+            "name": "Liam Evans",
+            "comment": "Would not buy again",
+            "stars": 1
+        },
+        
+            {
+                "id": 16,
+                "productId": 4,
+                "name": "Sophia Thompson",
+                "comment": "Great phone, excellent performance!",
+                "stars": 5
+            },
+            {
+                "id": 17,
+                "productId": 4,
+                "name": "Oliver Brown",
+                "comment": "Battery life is amazing!",
+                "stars": 5
+            },
+            {
+                "id": 18,
+                "productId": 4,
+                "name": "Emma Wilson",
+                "comment": "Camera quality is outstanding.",
+                "stars": 4
+            },
+            {
+                "id": 19,
+                "productId": 5,
+                "name": "William Harris",
+                "comment": "Love the design and performance.",
+                "stars": 5
+            },
+            {
+                "id": 20,
+                "productId": 5,
+                "name": "Amelia Martin",
+                "comment": "Fast and reliable.",
+                "stars": 4
+            },
+            {
+                "id": 21,
+                "productId": 5,
+                "name": "James Lee",
+                "comment": "Display is crisp and vibrant.",
+                "stars": 4
+            },{
+                "id": 21,
+                "productId": 6,
+                "name": "Michael Johnson",
+                "comment": "Fast processing speed and reliable performance.",
+                "stars": 4
+            },
+            {
+                "id": 22,
+                "productId": 6,
+                "name": "Sophia Lee",
+                "comment": "Great value for money. Compact and efficient.",
+                "stars": 5
+            },
+            {
+                "id": 23,
+                "productId": 6,
+                "name": "David Brown",
+                "comment": "Battery life is excellent for a phone this size.",
+                "stars": 4
+            },
+            {
+                "id": 24,
+                "productId": 6,
+                "name": "Olivia Clark",
+                "comment": "Easy to use interface and responsive touch screen.",
+                "stars": 5
+            },
+            {
+                "id": 25,
+                "productId": 7,
+                "name": "James Anderson",
+                "comment": "Great performance and excellent value for money.",
+                "stars": 4
+            },
+            {
+                "id": 26,
+                "productId": 7,
+                "name": "Sophia Martinez",
+                "comment": "Compact size with powerful features.",
+                "stars": 5
+            },
+            {
+                "id": 27,
+                "productId": 7,
+                "name": "Daniel Wilson",
+                "comment": "Fast and responsive performance, perfect for everyday use.",
+                "stars": 5
+            },
+            {
+                "id": 28,
+                "productId": 7,
+                "name": "Emily Taylor",
+                "comment": "Love the camera quality and battery life.",
+                "stars": 5
+            },
+            {
+                "id": 29,
+                "productId": 8,
+                "name": "Michael Johnson",
+                "comment": "The MacBook Air M3 15 is lightning fast and handles all my tasks effortlessly. The display is stunning and colors are vibrant.",
+                "stars": 5
+              },
+              {
+                "id": 30,
+                "productId": 8,
+                "name": "Sophia Rodriguez",
+                "comment": "I upgraded from my old MacBook Pro to the MacBook Air M3 15, and I'm amazed by the performance and portability. It's perfect for my work as a graphic designer.",
+                "stars": 5
+              },
+              {
+                "id": 31,
+                "productId": 8,
+                "name": "Daniel Brown",
+                "comment": "Excellent build quality and battery life. The MacBook Air M3 15 handles heavy multitasking with ease.",
+                "stars": 5
+              },
+              {
+                "id": 32,
+                "productId": 9,
+                "name": "John Doe",
+                "comment": "The MacBook Air M1 is unbelievably fast and responsive. I love how lightweight and portable it is, perfect for my work on the go.",
+                "stars": 5
+              },
+              {
+                "id": 33,
+                "productId": 9,
+                "name": "Emily Smith",
+                "comment": "The battery life on this MacBook Air M1 is exceptional. It easily lasts all day, even with heavy use. Definitely worth the investment!",
+                "stars": 5
+              },
+              {
+                "id": 34,
+                "productId": 9,
+                "name": "Michael Johnson",
+                "comment": "The display quality is top-notch. Colors are vibrant and text is incredibly sharp. Watching movies or editing photos on this laptop is a joy.",
+                "stars": 5
+              },
+              {
+                "id": 35,
+                "productId": 10,
+                "name": "John Doe",
+                "comment": "Great laptop for daily use, very fast and lightweight.",
+                "stars": 4
+              },
+              {
+                "id": 36,
+                "productId": 10,
+                "name": "Jane Smith",
+                "comment": "Excellent performance and battery life. Good value for money.",
+                "stars": 5
+              },
+              {
+                "id": 37,
+                "productId": 10,
+                "name": "Bob Brown",
+                "comment": "The MacBook Air M1 is a great laptop for everyday use. The battery life is also great.",
+                "stars": 4
+              },
+
+                {
+                  "id": 38,
+                  "productId": 10,
+                  "name": "Sarah Johnson",
+                  "comment": "The MacBook Air M1 is an excellent laptop for work. The battery life is also great.",
+                  "stars": 5
+                },
+                {
+                  "id": 39,
+                  "productId": 11,
+                  "name": "Michael Smith",
+                  "comment": "Really impressed with the MacBook Air M1. Great performance and battery life!",
+                  "stars": 4
+                },
+                {
+                  "id": 40,
+                  "productId": 11,
+                  "name": "Emily Johnson",
+                  "comment": "Excellent choice for professionals. Highly recommend!",
+                  "stars": 5
+                },
+                {
+                  "id": 41,
+                  "productId": 11,
+                  "name": "Daniel Brown",
+                  "comment": "Sleek design and powerful performance. Loving it so far!",
+                  "stars": 5
+                },
+                {
+                  "id": 42,
+                  "productId": 12,
+                  "name": "Sophia Lee",
+                  "comment": "Perfect for my daily tasks. Fast and reliable.",
+                  "stars": 5
+                },
+                {
+                  "id": 43,
+                  "productId": 12,
+                  "name": "Oliver Martinez",
+                  "comment": "Great value for the price. Battery life exceeds expectations.",
+                  "stars": 4
+                },
+                {
+                  "id": 44,
+                  "productId": 12,
+                  "name": "Isabella Thompson",
+                  "comment": "Impressed with the lightweight design and performance.",
+                  "stars": 5
+                },
+                {
+                  "id": 45,
+                  "productId": 13,
+                  "name": "Lucas Brown",
+                  "comment": "Fantastic laptop for everyday use. Battery lasts all day.",
+                  "stars": 5
+                },
+                {
+                  "id": 46,
+                  "productId": 13,
+                  "name": "Chloe Wilson",
+                  "comment": "Highly recommend for students. Great for multitasking.",
+                  "stars": 4
+                },
+                {
+                  "id": 47,
+                  "productId": 13,
+                  "name": "Ethan Johnson",
+                  "comment": "Smooth performance and long-lasting battery.",
+                  "stars": 5
+                },
+                {
+                  "id": 48,
+                  "productId": 14,
+                  "name": "Emma Garcia",
+                  "comment": "Best laptop I've owned. Perfect for work and entertainment.",
+                  "stars": 5
+                },
+                {
+                  "id": 49,
+                  "productId": 14,
+                  "name": "David White",
+                  "comment": "Impressive build quality and performance. Definitely worth it.",
+                  "stars": 5
+                },
+                {
+                  "id": 50,
+                  "productId": 14,
+                  "name": "Sophie Taylor",
+                  "comment": "Great laptop overall. Fast, reliable, and stylish.",
+                  "stars": 4
+                },
+                {
+                  "id": 51,
+                  "productId": 15,
+                  "name": "Mia Martinez",
+                  "comment": "Excellent choice for professionals. Fast and responsive.",
+                  "stars": 5
+                },
+                {
+                  "id": 52,
+                  "productId": 15,
+                  "name": "James Wilson",
+                  "comment": "Superb performance and sleek design. Very satisfied.",
+                  "stars": 5
+                },
+                {
+                  "id": 53,
+                  "productId": 15,
+                  "name": "Ava Thompson",
+                  "comment": "Great battery life and powerful performance.",
+                  "stars": 4
+                },
+                {
+                  "id": 54,
+                  "productId": 16,
+                  "name": "Noah Garcia",
+                  "comment": "Perfect laptop for traveling. Lightweight and powerful.",
+                  "stars": 5
+                },
+                {
+                  "id": 55,
+                  "productId": 16,
+                  "name": "Lily Brown",
+                  "comment": "Excellent build quality and performance. Highly recommended.",
+                  "stars": 5
+                },
+                {
+                  "id": 56,
+                  "productId": 16,
+                  "name": "Jack Thompson",
+                  "comment": "Great laptop for everyday use. Fast and reliable.",
+                  "stars": 4
+                },
+                {
+                  "id": 57,
+                  "productId": 17,
+                  "name": "Ella Wilson",
+                  "comment": "Highly recommended for students. Great for multitasking.",
+                  "stars": 5
+                },
+                {
+                  "id": 58,
+                  "productId": 17,
+                  "name": "Daniel Johnson",
+                  "comment": "Smooth performance and long-lasting battery.",
+                  "stars": 4
+                },
+                {
+                  "id": 59,
+                  "productId": 17,
+                  "name": "Olivia Taylor",
+                  "comment": "Impressive build quality and performance. Definitely worth it.",
+                  "stars": 5
+                },
+                {
+                  "id": 60,
+                  "productId": 18,
+                  "name": "Liam Garcia",
+                  "comment": "Great laptop overall. Fast, reliable, and stylish.",
+                  "stars": 5
+                },
+                {
+                    "id": 61,
+                    "productId": 1,
+                    "name": "Charless Darwin",
+                    "comment": "Great value for money. Compact and efficient.",
+                    "stars": 5
+                },
+                {
+                    "id": 62,
+                    "productId": 4,
+                    "name": "Yuval Noah Harari",
+                    "comment": "Highly recommended. Fast and responsive.",
+                    "stars": 5
+                },
+                {
+                    "id": 63,
+                    "productId": 4,
+                    "name": "Liam Adam",
+                    "comment": "Impressive build quality and performance. Definitely worth it.",
+                    "stars": 5
+                },
+                {
+                    "id": 64,
+                    "productId": 13,
+                    "name": "Chloe Wilson",
+                    "comment": "Highly recommend for students. Great for multitasking.",
+                    "stars": 5
+                },
+                {
+                    "id": 65,
+                    "productId": 13,
+                    "name": "Daniel Brown",
+                    "comment": "Smooth performance and long-lasting battery.",
+                    "stars": 5
+                },
+                {
+                    "id": 66,
+                    "productId": 15,
+                    "name": "Emma Taylor",
+                    "comment": "Best laptop I've owned. Perfect for work and entertainment.",
+                    "stars": 5
+                },
+                {
+                    "id": 67,
+                    "productId": 15,
+                    "name": "David White",
+                    "comment": "Impressive build quality and performance. Definitely worth it.",
+                    "stars": 5
+                },
+                {
+                    "id": 68,
+                    "productId": 8,
+                    "name": "Sophie Taylor",
+                    "comment": "Great laptop overall. Fast, reliable, and stylish.",
+                    "stars": 5
+                },
+                {
+                    "id": 69,
+                    "productId": 8,
+                    "name": "Mia Martinez",
+                    "comment": "Excellent choice for professionals. Fast and responsive.",
+                    "stars": 5
+                },
+                {
+                    "id": 70,
+                    "productId": 9,
+                    "name": "James Wilson",
+                    "comment": "Superb performance and sleek design. Very satisfied.",
+                    "stars": 5
+                }
+            
+              
+              
+              
+             
+              
+              
+              
+              
+              
+              
+              
+              
+
+            
+            
+        
+        
+
+
+
+
+    ]
+}

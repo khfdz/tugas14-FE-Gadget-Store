@@ -1,32 +1,91 @@
 import React from 'react';
-import imagePopularProduct from '../images/home-image/productPopular.png';
 import { Link } from 'react-router-dom';
+import { useBoxCategoriesContext } from '../context/BoxCategoriesContext';
+import productsData from '../DataJson/product.json';
+import reviewData from '../DataJson/review.json'; // Assuming you have imported review data
 
-const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, products }) => {
+function formatPrice(price) {
+    const formattedPrice = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return `IDR ${formattedPrice.replace(".000", "")}K`;
+}
+
+const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, searchTerm, selectedCategories, selectedBrands, minPrice, maxPrice, sortBy }) => {
+    const { filterProducts } = useBoxCategoriesContext();
+
+    // Function to calculate total stars for a product
+    const calculateTotalStars = (productId) => {
+        const reviews = reviewData.reviews.filter(review => review.productId === productId);
+        return reviews.reduce((totalStars, review) => totalStars + review.stars, 0);
+    };
+
+    // Filter products based on context state
+    const filteredProducts = filterProducts(productsData.products);
+
+    // Sorting logic
+    if (sortBy === 'priceAsc') {
+        filteredProducts.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+    } else if (sortBy === 'priceDesc') {
+        filteredProducts.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+    } else if (sortBy === 'popular') {
+        // Sort by popularity (highest total stars)
+        filteredProducts.sort((a, b) => {
+            const totalStarsA = calculateTotalStars(a.id);
+            const totalStarsB = calculateTotalStars(b.id);
+            return totalStarsB - totalStarsA; // Sort descending by total stars
+        });
+    }
+
+    // Apply other filters (search term, categories, brands, price range)
+    let filteredItems = filteredProducts.filter(product => {
+        // Filter by search term
+        if (searchTerm && !product.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+            return false;
+        }
+        // Filter by selected categories
+        if (selectedCategories.length > 0 && !selectedCategories.includes(product.category)) {
+            return false;
+        }
+        // Filter by selected brands
+        if (selectedBrands.length > 0 && !selectedBrands.includes(product.brand)) {
+            return false;
+        }
+        // Filter by price range
+        if (minPrice && parseFloat(product.price) < minPrice) {
+            return false;
+        }
+        if (maxPrice && parseFloat(product.price) > maxPrice) {
+            return false;
+        }
+        return true;
+    });
+
     const startIndex = (currentPage - 1) * itemsPerPage;
-    const currentItems = products.slice(startIndex, startIndex + itemsPerPage);
-    const totalPages = Math.ceil(products.length / itemsPerPage);
+    const currentItems = filteredItems.slice(startIndex, startIndex + itemsPerPage);
+    const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
 
     return (
         <div>
-            <Link to="/detail">
             <div className="grid grid-cols-3 gap-6 ml-24">
                 {currentItems.map(({ id, name, price, image }) => (
                     <div key={id} className="bg-nt09 rounded-4xl p-1 shadow-lg text-center">
-                        <img src={image} alt="Popular Product" className="mx-auto mb" />
-                        <h2 className="font-semibold mb-2 pb-2">{name}</h2>
-                        <p className="text-lg font-bold pb-4">{price}</p>
+                        <Link to={`/detail/${id}`}>
+                            <div className="relative w-full h-80 items-center justify-center">
+                                <img src={`src/images/home-image/product1/${image[0]}`} alt="Product" className="mt-8 items-center justify-center" />
+                            </div>
+                            <div className="p-4 mt-32">
+                                <h2 className="font-semibold text-3xl mb-2 mt-14 ">{name}</h2>
+                                <p className="text-2xl">{formatPrice(price)}</p>
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>
-            </Link>
 
-            
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-center mt-4 text-2xl">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
                         key={index}
-                        className={`mx-1 px-3 py-1  rounded-xl w-12 h-12 mt-4 ${
+                        className={`mx-1 px-3 py-1 rounded-xl w-14 h-14 mt-4 ${
                             currentPage === index + 1 ? 'bg-colorPrimary1 text-white' : 'bg-nt07 text-white'
                         }`}
                         onClick={() => handlePageChange(index + 1)}
@@ -35,7 +94,6 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, products })
                     </button>
                 ))}
             </div>
-            
         </div>
     );
 };

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 15 Pro Max",
+        "price": 22499000,
+        "image": "iPhone15ProMax.png",
+        "color": "Black Titanium",
+        "processor": "",
+        "storage": "512GB",
+        "quantity": 1,
+        "subtotal": 22499000,
+        "userId": 1 
+    },
+    {
+        "id": 2,
+        "name": "AirPods Pro (2nd Generation) with USB-C",
+        "price": 3499000,
+        "image": "AirPodsPro2ndGen.png",
+        "processor": "",
+        "storage": "",
+        "color": "",
+        "quantity": 1,
+        "subtotal": 3499000,
+        "userId": 1
+    }
+]

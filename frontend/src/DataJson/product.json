@@ -1,0 +1,936 @@
+{
+    "products": [
+
+      {
+  "id": 1,
+  "name": "iPhone 15 Pro Max",
+  "price": 22499000,
+  "brand": "Apple",
+  "category": "Smartphone",
+  "image": [
+    "iPhone15ProMax.png",
+    "iPhone15ProMax2.png",
+    "iPhone15ProMax3.png",
+    "iPhone15ProMax4.png"
+  ],
+  "description": "The Apple iPhone 15 Pro Max represents the pinnacle of Apple’s smartphone technology, boasting a sleek, elegant design and advanced features. Powered by the cutting-edge A17 Pro chip, this device delivers unmatched performance and efficiency. Its ProMotion display with a 120Hz refresh rate ensures smooth and responsive interactions. The iPhone 15 Pro Max features an advanced camera system with a 48MP main lens, a 12MP ultra-wide lens, and a 12MP telephoto lens, providing stunning photo and video capabilities. It supports 5G connectivity for ultra-fast internet speeds and offers multiple storage options, including 256GB, 512GB, and 1TB. This smartphone supports USB-C for fast data transfer and charging, and the second-generation Ultra Wideband chip enhances Precision Finding. The device is available in several colors, such as Natural Titanium, White Titanium, Blue Titanium, and Black Titanium, combining style with cutting-edge technology to offer the ultimate smartphone experience.",
+  "specifications": {
+    "descriptionSpec": "The Apple iPhone 15 Pro Max represents the pinnacle of Apple’s smartphone technology, boasting a sleek, elegant design and advanced features. Powered by the cutting-edge A17 Pro chip, this device delivers unmatched performance and efficiency. Its ProMotion display with a 120Hz refresh rate ensures smooth and responsive interactions. The iPhone 15 Pro Max features an advanced camera system with a 48MP main lens, a 12MP ultra-wide lens, and a 12MP telephoto lens, providing stunning photo and video capabilities. It supports 5G connectivity for ultra-fast internet speeds and offers multiple storage options, including 256GB, 512GB, and 1TB. This smartphone supports USB-C for fast data transfer and charging, and the second-generation Ultra Wideband chip enhances Precision Finding. The device is available in several colors, such as Natural Titanium, White Titanium, Blue Titanium, and Black Titanium, combining style with cutting-edge technology to offer the ultimate smartphone experience.",
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#847f7c",
+          "colorName": "Natural Titanium"
+        },
+        {
+          "colorCode": "#dddddd",
+          "colorName": "White Titanium"
+        },
+        {
+          "colorCode": "#2e4452",
+          "colorName": "Blue Titanium"
+        },
+        {
+          "colorCode": "#1b1b1b",
+          "colorName": "Black Titanium"
+        }
+      ]
+    }
+  }
+},
+
+      
+
+{
+  "id": 2,
+  "name": "iPhone 15 Plus",
+  "price": 15999000,
+  "brand": "Apple",
+  "category": "Smartphone",
+  "image": [
+    "iPhone15Plus.png",
+    "iPhone15Plus2.png",
+    "iPhone15Plus3.png",
+    "iPhone15Plus4.png"
+  ],
+  "description": "The Apple iPhone 15 Plus is a perfect blend of advanced technology and user-friendly features, offering a premium experience for all users. This model features the powerful A16 Bionic chip, ensuring fast performance and efficient power usage. The iPhone 15 Plus is equipped with a stunning 6.7-inch Super Retina XDR display, providing vibrant colors and sharp details for an immersive viewing experience. The dual-camera system includes a 48MP wide lens and a 12MP ultra-wide lens, enabling high-quality photography and videography with advanced computational photography features like Night mode, Deep Fusion, and Smart HDR 4. The iPhone 15 Plus offers ample storage options, including 128GB, 256GB, and 512GB, catering to various user needs. With 5G support, users can enjoy ultra-fast download and streaming speeds. The iPhone 15 Plus is available in multiple colors, each crafted with precision to offer a stylish and durable finish. Combining cutting-edge technology, elegant design, and robust functionality, the iPhone 15 Plus stands out as a remarkable smartphone in Apple's lineup.",
+  "specifications": {
+    "descriptionSpec": "The Apple iPhone 15 Plus is a perfect blend of advanced technology and user-friendly features, offering a premium experience for all users. This model features the powerful A16 Bionic chip, ensuring fast performance and efficient power usage. The iPhone 15 Plus is equipped with a stunning 6.7-inch Super Retina XDR display, providing vibrant colors and sharp details for an immersive viewing experience. The dual-camera system includes a 48MP wide lens and a 12MP ultra-wide lens, enabling high-quality photography and videography with advanced computational photography features like Night mode, Deep Fusion, and Smart HDR 4. The iPhone 15 Plus offers ample storage options, including 128GB, 256GB, and 512GB, catering to various user needs. With 5G support, users can enjoy ultra-fast download and streaming speeds. The iPhone 15 Plus is available in multiple colors, each crafted with precision to offer a stylish and durable finish. Combining cutting-edge technology, elegant design, and robust functionality, the iPhone 15 Plus stands out as a remarkable smartphone in Apple's lineup.",
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#e2c8cb",
+          "colorName": "Pink"
+        },
+        {
+          "colorCode": "#e6e0c0",
+          "colorName": "Gold"
+        },
+        {
+          "colorCode": "#c9d4c4",
+          "colorName": "Green"
+        },
+        {
+          "colorCode": "#cdd5d8",
+          "colorName": "Silver"
+        },
+        {
+          "colorCode": "#35393c",
+          "colorName": "Black"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 3,
+  "name": "iPhone 14 Pro Max",
+  "price": 16499000,
+  "brand": "Apple",
+  "category": "Smartphone",
+  "image": [
+    "iPhone14ProMax.png",
+    "iPhone14ProMax2.png",
+    "iPhone14ProMax3.png",
+    "iPhone14ProMax4.png"
+  ],
+  "description": "The Apple iPhone 14 Pro Max is the ultimate expression of Apple's cutting-edge technology and design. It features the A16 Bionic chip, offering unparalleled performance and efficiency for all your tasks, from gaming to multitasking. The device boasts a stunning 6.7-inch Super Retina XDR display with ProMotion technology, delivering a refresh rate of up to 120Hz for incredibly smooth scrolling and responsiveness. The iPhone 14 Pro Max's camera system is a true game-changer, with a triple-camera setup that includes a 48MP main sensor, a 12MP ultra-wide lens, and a 12MP telephoto lens. This advanced system supports ProRAW and ProRes video recording, allowing you to capture professional-grade photos and videos right from your smartphone. The new Photonic Engine enhances low-light photography, ensuring your night shots are brighter and more detailed than ever. With storage options ranging from 256GB to 1TB, you have plenty of space for all your photos, videos, apps, and more. The iPhone 14 Pro Max also supports 5G connectivity, providing blazing-fast internet speeds for streaming, downloading, and browsing on the go. ",
+  "specifications": {
+    "descriptionSpec": "The Apple iPhone 14 Pro Max is the ultimate expression of Apple's cutting-edge technology and design. It features the A16 Bionic chip, offering unparalleled performance and efficiency for all your tasks, from gaming to multitasking. The device boasts a stunning 6.7-inch Super Retina XDR display with ProMotion technology, delivering a refresh rate of up to 120Hz for incredibly smooth scrolling and responsiveness. The iPhone 14 Pro Max's camera system is a true game-changer, with a triple-camera setup that includes a 48MP main sensor, a 12MP ultra-wide lens, and a 12MP telephoto lens. This advanced system supports ProRAW and ProRes video recording, allowing you to capture professional-grade photos and videos right from your smartphone. The new Photonic Engine enhances low-light photography, ensuring your night shots are brighter and more detailed than ever. With storage options ranging from 256GB to 1TB, you have plenty of space for all your photos, videos, apps, and more. The iPhone 14 Pro Max also supports 5G connectivity, providing blazing-fast internet speeds for streaming, downloading, and browsing on the go. This model comes in a variety of sophisticated colors, each crafted with a premium matte finish. The ceramic shield front cover offers exceptional durability, making it one of the toughest smartphones on the market. Additionally, the iPhone 14 Pro Max features improved battery life, allowing you to stay connected and entertained throughout the day. Combining a sleek design, powerful hardware, and an array of advanced features, the Apple iPhone 14 Pro Max is designed to meet the needs of even the most demanding users.",
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#584f62",
+          "colorName": "Purple"
+        },
+        {
+          "colorCode": "#f0f2f1",
+          "colorName": "White"
+        },
+        {
+          "colorCode": "#f4e8ce",
+          "colorName": "Gold"
+        },
+        {
+          "colorCode": "#3f3e3c",
+          "colorName": "Graphite"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 4,
+  "name": "iPhone 14 Plus",
+  "price": 12499000,
+  "brand": "Apple",
+  "category": "Smartphone",
+  "image": [
+    "iPhone14Plus.png",
+    "iPhone14Plus2.png",
+    "iPhone14Plus3.png",
+    "iPhone14Plus4.png"
+  ],
+  "description": "The Apple iPhone 14 Plus is designed for those who want a large display and powerful performance. It features a 6.7-inch Super Retina XDR display, providing an immersive viewing experience with vibrant colors and sharp details. Powered by the A16 Bionic chip, the iPhone 14 Plus delivers fast and efficient performance for all your needs. The dual-camera system includes a 12MP wide and a 12MP ultra-wide lens, offering impressive photo and video capabilities. The Photonic Engine enhances low-light performance, ensuring your night shots are brighter and more detailed. With storage options of 128GB, 256GB, and 512GB, there's ample space for all your content. The iPhone 14 Plus supports 5G connectivity for fast internet speeds and comes in a variety of colors with a durable matte finish. Its improved battery life keeps you connected all day.",
+  "specifications": {
+    "descriptionSpec": "The Apple iPhone 14 Plus is designed for those who want a large display and powerful performance. It features a 6.7-inch Super Retina XDR display, providing an immersive viewing experience with vibrant colors and sharp details. Powered by the A16 Bionic chip, the iPhone 14 Plus delivers fast and efficient performance for all your needs. The dual-camera system includes a 12MP wide and a 12MP ultra-wide lens, offering impressive photo and video capabilities. The Photonic Engine enhances low-light performance, ensuring your night shots are brighter and more detailed. With storage options of 128GB, 256GB, and 512GB, there's ample space for all your content. The iPhone 14 Plus supports 5G connectivity for fast internet speeds and comes in a variety of colors with a durable matte finish. Its improved battery life keeps you connected all day.",
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#f9e479",
+          "colorName": "Yellow"
+        },
+        {
+          "colorCode": "#9fb4c7",
+          "colorName": "Blue"
+        },
+        {
+          "colorCode": "#e5ddea",
+          "colorName": "White"
+        },
+        {
+          "colorCode": "#222931",
+          "colorName": "Black"
+        }
+      ]
+    }
+  }
+},
+
+
+
+{
+  "id": 5,
+  "name": "iPhone 13",
+  "price": 9999000,
+  "brand": "Apple",
+  "category": "Smartphone",
+  "image": [
+    "iPhone13.png",
+    "iPhone13-2.png",
+    "iPhone13-3.png",
+    "iPhone13-4.png"
+  ],
+  "description": "The Apple iPhone 13 brings advanced technology in a sleek design. It features a 6.1-inch Super Retina XDR display, offering an excellent viewing experience. Powered by the A15 Bionic chip, the iPhone 13 ensures smooth and efficient performance. The dual-camera system includes a 12MP wide and a 12MP ultra-wide lens, with advanced features like Night mode and Deep Fusion for stunning photos and videos. The iPhone 13 offers storage options of 128GB, 256GB, and 512GB, and supports 5G connectivity. Available in several stylish colors, it combines durability with a premium finish. The improved battery life lets you enjoy your iPhone 13 throughout the day without interruptions.",
+  "specifications": {
+    "descriptionSpec": "The Apple iPhone 13 brings advanced technology in a sleek design. It features a 6.1-inch Super Retina XDR display, offering an excellent viewing experience. Powered by the A15 Bionic chip, the iPhone 13 ensures smooth and efficient performance. The dual-camera system includes a 12MP wide and a 12MP ultra-wide lens, with advanced features like Night mode and Deep Fusion for stunning photos and videos. The iPhone 13 offers storage options of 128GB, 256GB, and 512GB, and supports 5G connectivity. Available in several stylish colors, it combines durability with a premium finish. The improved battery life lets you enjoy your iPhone 13 throughout the day without interruptions.",
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#394c38",
+          "colorName": "Green"
+        },
+        {
+          "colorCode": "#fd7f94",
+          "colorName": "Red"
+        },
+        {
+          "colorCode": "#9fb4c7",
+          "colorName": "Blue"
+        },
+        {
+          "colorCode": "#222931",
+          "colorName": "Black"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 6,
+  "name": "iPhone SE 3rd Gen",
+  "price": 7499000,
+  "brand": "Apple",
+  "category": "Smartphone",
+  "image": [
+    "iPhoneSE3rd.png",
+    "iPhoneSE3rd2.png",
+    "iPhoneSE3rd3.png",
+    "iPhoneSE3rd4.png"
+  ],
+  "description": "The iPhone SE 3rd Gen brings powerful features in a compact design. It features the A15 Bionic chip, providing excellent performance for all your tasks. The phone sports a 4.7-inch Retina HD display, offering clear and vibrant visuals. It includes a 12MP wide camera for high-quality photos and 4K video recording. With storage options of 64GB, 128GB, and 256GB, you have ample space for your apps, photos, and videos. The iPhone SE 3rd Gen supports 5G connectivity, ensuring fast internet speeds. Available in three stylish colors: Midnight, Starlight, and Product(Red).",
+  "specifications": {
+    "descriptionSpec": "The iPhone SE 3rd Gen brings powerful features in a compact design. It features the A15 Bionic chip, providing excellent performance for all your tasks. The phone sports a 4.7-inch Retina HD display, offering clear and vibrant visuals. It includes a 12MP wide camera for high-quality photos and 4K video recording. With storage options of 64GB, 128GB, and 256GB, you have ample space for your apps, photos, and videos. The iPhone SE 3rd Gen supports 5G connectivity, ensuring fast internet speeds. Available in three stylish colors: Midnight, Starlight, and Product(Red).",
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "64GB",
+          "price": 0
+        },
+        {
+          "name": "128GB",
+          "price": 0
+        },
+        {
+          "name": "256GB",
+          "price": 0
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#000000",
+          "colorName": "Midnight"
+        },
+        {
+          "colorCode": "#f4f4f4",
+          "colorName": "Starlight"
+        },
+        {
+          "colorCode": "#d11c1c",
+          "colorName": "Product(Red)"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 7,
+  "name": "MacBook Air 13 (M3)",
+  "price": 18999000,
+  "brand": "Apple",
+  "category": "Laptop",
+  "image": [
+    "MacBookAir13M3.png",
+    "MacBookAir13M3-2.png",
+    "MacBookAir13M3-3.png",
+    "MacBookAir13M3-4.png"
+  ],
+  "description": "The MacBook Air 13 (M3) is designed for users who prioritize portability without compromising performance. Featuring Apple's M3 chip, this laptop delivers robust processing power and exceptional battery life, making it perfect for students and professionals alike. Its 13-inch Retina display offers vivid colors and crisp details, enhancing your viewing experience whether you're browsing the web or editing photos. With macOS, you get a seamless integration with your other Apple devices, along with advanced features like Siri and Touch ID. The MacBook Air 13 (M3) also includes Thunderbolt 3 ports for fast data transfer and connecting to external displays.",
+  "specifications": {
+    "descriptionSpec": "The MacBook Air 13 (M3) is powered by Apple's M3 chip, ensuring superior performance and efficiency for your everyday tasks. Its lightweight design and long battery life make it an ideal companion for work or play. The 13-inch Retina display offers stunning visuals, while macOS provides a seamless user experience with features like Siri and iCloud integration. With Thunderbolt 3 ports, you can connect to a variety of devices and accessories, enhancing your productivity and creativity.",
+    "processor": {
+      "title": "Processor",
+      "items": [
+        {
+          "name": "Apple M3 Chip (CPU 8-Core, GPU 8-Core, 8GB RAM)",
+          "price": 0
+        },
+        {
+          "name": "Apple M3 Chip (CPU 8-Core, GPU 10-Core, 8GB RAM)",
+          "price": 3000000
+        },
+        {
+          "name": "Apple M3 Chip (CPU 8-Core, GPU 10-Core, 16GB RAM)",
+          "price": 6000000
+        }
+      ]
+    },
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#c4c4c4",
+          "colorName": "Silver"
+        },
+        {
+          "colorCode": "#000000",
+          "colorName": "Space Gray"
+        },
+        {
+          "colorCode": "#f7e7d9",
+          "colorName": "Gold"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 8,
+  "name": "MacBook Pro M1 14",
+  "price": 19999000,
+  "brand": "Apple",
+  "category": "Laptop",
+  "image": [
+    "MacBookProM114.png",
+    "MacBookProM114-2.png",
+    "MacBookProM114-3.png",
+    "MacBookProM114-4.png"
+  ],
+  "description": "The MacBook Pro M1 14 is designed for professionals who demand power and performance. Featuring Apple's M1 chip with high-speed CPU and GPU, this laptop excels in multitasking and creative tasks. The 14-inch Retina display delivers vivid colors and crisp details, perfect for editing photos and videos. macOS provides a seamless user experience with advanced features like Siri and iCloud integration. Equipped with Thunderbolt 4 ports, the MacBook Pro M1 14 offers fast data transfer and versatile connectivity options. Sleek and lightweight, it combines style with cutting-edge technology.",
+  "specifications": {
+    "descriptionSpec": "The MacBook Pro M1 14 is designed for professionals who demand power and performance. Featuring Apple's M1 chip with high-speed CPU and GPU, this laptop excels in multitasking and creative tasks. The 14-inch Retina display delivers vivid colors and crisp details, perfect for editing photos and videos. macOS provides a seamless user experience with advanced features like Siri and iCloud integration. Equipped with Thunderbolt 4 ports, the MacBook Pro M1 14 offers fast data transfer and versatile connectivity options. Sleek and lightweight, it combines style with cutting-edge technology.",
+    "processor": {
+      "title": "Processor",
+      "items": [
+        {
+          "name": "Apple M1 Chip (CPU 8-Core, GPU 8-Core, 8GB RAM)",
+          "price": 0
+        },
+        {
+          "name": "Apple M1 Chip (CPU 8-Core, GPU 10-Core, 8GB RAM)",
+          "price": 3000000
+        },
+        {
+          "name": "Apple M1 Chip (CPU 8-Core, GPU 10-Core, 16GB RAM)",
+          "price": 6000000
+        }
+      ]
+    },
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#c4c4c4",
+          "colorName": "Silver"
+        },
+        {
+          "colorCode": "#000000",
+          "colorName": "Space Gray"
+        },
+        {
+          "colorCode": "#f7e7d9",
+          "colorName": "Gold"
+        }
+      ]
+    }
+  }
+},
+
+{
+  "id": 9,
+  "name": "MacBook Air M1",
+  "price": 12499000,
+  "brand": "Apple",
+  "category": "Laptop",
+  "image": [
+    "MacBookAirM1.png",
+    "MacBookAirM1-2.png",
+    "MacBookAirM1-3.png",
+    "MacBookAirM1-4.png"
+  ],
+  "description": "The MacBook Air M1 is designed to deliver incredible performance with Apple's M1 chip. It offers a fanless design, which ensures quiet operation without compromising on power. The laptop features a stunning 13.3-inch Retina display that brings vivid colors and sharp details to life. With macOS Big Sur, you get a smooth and seamless user experience, along with features like Siri and iCloud integration. The MacBook Air M1 is equipped with Thunderbolt / USB 4 ports for fast data transfer and connectivity. It provides up to 18 hours of battery life, making it perfect for work, creativity, and entertainment.",
+  "specifications": {
+    "descriptionSpec": "The MacBook Air M1 is designed to deliver incredible performance with Apple's M1 chip. It offers a fanless design, which ensures quiet operation without compromising on power. The laptop features a stunning 13.3-inch Retina display that brings vivid colors and sharp details to life. With macOS Big Sur, you get a smooth and seamless user experience, along with features like Siri and iCloud integration. The MacBook Air M1 is equipped with Thunderbolt / USB 4 ports for fast data transfer and connectivity. It provides up to 18 hours of battery life, making it perfect for work, creativity, and entertainment.",
+    "processor": {
+      "title": "Processor",
+      "items": [
+        {
+          "name": "Apple M1 Chip (CPU 8-Core, GPU 7-Core, 8GB RAM)",
+          "price": 0
+        },
+        {
+          "name": "Apple M1 Chip (CPU 8-Core, GPU 8-Core, 8GB RAM)",
+          "price": 3000000
+        },
+        {
+          "name": "Apple M1 Chip (CPU 8-Core, GPU 8-Core, 16GB RAM)",
+          "price": 6000000
+        }
+      ]
+    },
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#c4c4c4",
+          "colorName": "Silver"
+        },
+        {
+          "colorCode": "#000000",
+          "colorName": "Space Gray"
+        },
+        {
+          "colorCode": "#f7e7d9",
+          "colorName": "Gold"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 10,
+  "name": "MacBook Air M2",
+  "price": 15999000,
+  "brand": "Apple",
+  "category": "Laptop",
+  "image": [
+    "MacBookAirM2.png",
+    "MacBookAirM2-2.png",
+    "MacBookAirM2-3.png",
+    "MacBookAirM2-4.png"
+  ],
+  "description": "The MacBook Air M2 is designed for users who seek a balance of performance and portability. Powered by Apple's M2 chip, this laptop delivers enhanced processing power and efficiency. Its 13-inch Retina display offers vivid colors and sharp details, perfect for everyday tasks and multimedia consumption. With macOS, you get a seamless integration with your other Apple devices, along with advanced features like Siri and iCloud. The MacBook Air M2 includes Thunderbolt 4 ports for fast data transfer and connecting to external displays.",
+  "specifications": {
+    "descriptionSpec": "The MacBook Air M2 is powered by Apple's M2 chip, ensuring superior performance and efficiency for your daily computing needs. Its lightweight design and long battery life make it an ideal companion for work or play. The 13-inch Retina display offers stunning visuals, while macOS provides a seamless user experience with features like Siri and iCloud integration. With Thunderbolt 4 ports, you can connect to a variety of devices and accessories, enhancing your productivity and creativity.",
+    "processor": {
+      "title": "Processor",
+      "items": [
+        {
+          "name": "Apple M2 Chip (CPU 8-Core, GPU 8-Core, 8GB RAM)",
+          "price": 0
+        },
+        {
+          "name": "Apple M2 Chip (CPU 8-Core, GPU 10-Core, 8GB RAM)",
+          "price": 3000000
+        },
+        {
+          "name": "Apple M2 Chip (CPU 8-Core, GPU 10-Core, 16GB RAM)",
+          "price": 6000000
+        }
+      ]
+    },
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#c4c4c4",
+          "colorName": "Silver"
+        },
+        {
+          "colorCode": "#000000",
+          "colorName": "Space Gray"
+        },
+        {
+          "colorCode": "#f7e7d9",
+          "colorName": "Gold"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 11,
+  "name": "MacBook Pro M3 14",
+  "price": 27999000,
+  "brand": "Apple",
+  "category": "Laptop",
+  "image": [
+    "MacBookProM314.png",
+    "MacBookProM314-2.png",
+    "MacBookProM314-3.png",
+    "MacBookProM314-4.png"
+  ],
+  "description": "The MacBook Pro M3 14 is designed for professionals who need power and performance in a sleek and portable package. Powered by Apple's M3 chip, it offers blazing fast processing speed and exceptional graphics performance. The 14-inch Retina display provides stunning visuals with True Tone technology for accurate colors. With Thunderbolt 4 ports, you can connect multiple devices and peripherals easily. It features a comfortable Magic Keyboard and Touch Bar for enhanced productivity. Whether you're editing videos, designing graphics, or developing apps, the MacBook Pro M3 14 delivers superior performance and reliability.",
+  "specifications": {
+    "descriptionSpec": "The MacBook Pro M3 14 is designed for professionals who need power and performance in a sleek and portable package. Powered by Apple's M3 chip, it offers blazing fast processing speed and exceptional graphics performance. The 14-inch Retina display provides stunning visuals with True Tone technology for accurate colors. With Thunderbolt 4 ports, you can connect multiple devices and peripherals easily. It features a comfortable Magic Keyboard and Touch Bar for enhanced productivity. Whether you're editing videos, designing graphics, or developing apps, the MacBook Pro M3 14 delivers superior performance and reliability.",
+    "processor": {
+      "title": "Processor",
+      "items": [
+        {
+          "name": "Apple M3 Chip (CPU 8-Core, GPU 8-Core, 8GB RAM)",
+          "price": 0
+        },
+        {
+          "name": "Apple M3 Chip (CPU 8-Core, GPU 10-Core, 8GB RAM)",
+          "price": 3000000
+        },
+        {
+          "name": "Apple M3 Chip (CPU 8-Core, GPU 10-Core, 16GB RAM)",
+          "price": 6000000
+        }
+      ]
+    },
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#c4c4c4",
+          "colorName": "Silver"
+        },
+        {
+          "colorCode": "#000000",
+          "colorName": "Space Gray"
+        },
+        {
+          "colorCode": "#f7e7d9",
+          "colorName": "Gold"
+        }
+      ]
+    }
+  }
+},
+
+
+{
+  "id": 12,
+  "name": "MacBook Pro M2 14",
+  "price": 32499000,
+  "brand": "Apple",
+  "category": "Laptop",
+  "image": [
+    "MacBookProM214.png",
+    "MacBookProM214-2.png",
+    "MacBookProM214-3.png",
+    "MacBookProM214-4.png"
+  ],
+  "description": "The MacBook Pro M2 14 is crafted for professionals who demand performance and reliability. Powered by Apple's M2 chip, it offers exceptional speed and efficiency for demanding tasks. The 14-inch Retina display with True Tone technology delivers vibrant colors and sharp details. Featuring Thunderbolt 4 ports, you can connect multiple devices effortlessly. It includes a comfortable Magic Keyboard and Touch Bar for enhanced productivity. Whether you're editing videos, designing graphics, or coding, the MacBook Pro M2 14 ensures smooth performance and versatility.",
+  "specifications": {
+    "descriptionSpec": "The MacBook Pro M2 14 is crafted for professionals who demand performance and reliability. Powered by Apple's M2 chip, it offers exceptional speed and efficiency for demanding tasks. The 14-inch Retina display with True Tone technology delivers vibrant colors and sharp details. Featuring Thunderbolt 4 ports, you can connect multiple devices effortlessly. It includes a comfortable Magic Keyboard and Touch Bar for enhanced productivity. Whether you're editing videos, designing graphics, or coding, the MacBook Pro M2 14 ensures smooth performance and versatility.",
+    "processor": {
+      "title": "Processor",
+      "items": [
+        {
+          "name": "Apple M2 Chip (CPU 8-Core, GPU 8-Core, 8GB RAM)",
+          "price": 0
+        },
+        {
+          "name": "Apple M2 Chip (CPU 8-Core, GPU 10-Core, 8GB RAM)",
+          "price": 3000000
+        },
+        {
+          "name": "Apple M2 Chip (CPU 8-Core, GPU 10-Core, 16GB RAM)",
+          "price": 6000000
+        }
+      ]
+    },
+    "storage": {
+      "title": "Storage",
+      "items": [
+        {
+          "name": "256GB",
+          "price": 0
+        },
+        {
+          "name": "512GB",
+          "price": 1500000
+        },
+        {
+          "name": "1TB",
+          "price": 3000000
+        }
+      ]
+    },
+    "colors": {
+      "title": "Colors",
+      "items": [
+        {
+          "colorCode": "#c4c4c4",
+          "colorName": "Silver"
+        },
+        {
+          "colorCode": "#000000",
+          "colorName": "Space Gray"
+        },
+        {
+          "colorCode": "#f7e7d9",
+          "colorName": "Gold"
+        }
+      ]
+    }
+  }
+},
+
+
+    {
+      "id": 13,
+      "name": "AirPods (3rd) with MagSafe Charging Case",
+      "price": 2699000,
+      "brand": "Apple",
+      "category": "Audio",
+      "image": [
+        "AirPods3rdGen.png",
+        "AirPods3rdGen-2.png",
+        "AirPods3rdGen-3.png",
+        "AirPods3rdGen-4.png"
+      ],
+      "description": "The AirPods (3rd generation) with MagSafe Charging Case deliver high-quality audio and seamless connectivity. Featuring spatial audio with dynamic head tracking, you'll experience immersive sound like never before. The MagSafe Charging Case ensures effortless charging and portability. With Adaptive EQ, music automatically tunes to the shape of your ear for a rich and balanced listening experience. Whether you're on a call or listening to music, AirPods deliver clear sound and all-day comfort.",
+      "specifications": {
+        "descriptionSpec": "The AirPods (3rd generation) with MagSafe Charging Case deliver high-quality audio and seamless connectivity. Featuring spatial audio with dynamic head tracking, you'll experience immersive sound like never before. The MagSafe Charging Case ensures effortless charging and portability. With Adaptive EQ, music automatically tunes to the shape of your ear for a rich and balanced listening experience. Whether you're on a call or listening to music, AirPods deliver clear sound and all-day comfort."
+      },
+        "processor": {},
+        "storage": [],
+        "colors": []
+      },
+
+      {
+        "id": 14,
+        "name": "AirPods (3rd) with Lightning Charging Case",
+        "price": 2499000,
+        "brand": "Apple",
+        "category": "Audio",
+        "image": [
+          "AirPods3rdGen_Lightning.png",
+          "AirPods3rdGen_Lightning-2.png",
+          "AirPods3rdGen_Lightning-3.png",
+          "AirPods3rdGen_Lightning-4.png"
+        ],
+        "description": "The AirPods (3rd generation) with Lightning Charging Case deliver high-quality audio and seamless connectivity. Featuring spatial audio with dynamic head tracking, you'll experience immersive sound like never before. The Lightning Charging Case ensures convenient charging and portability. With Adaptive EQ, music automatically tunes to the shape of your ear for a rich and balanced listening experience. Whether you're on a call or listening to music, AirPods deliver clear sound and all-day comfort.",
+        "specifications": {
+          "descriptionSpec": "The AirPods (3rd generation) with Lightning Charging Case deliver high-quality audio and seamless connectivity. Featuring spatial audio with dynamic head tracking, you'll experience immersive sound like never before. The Lightning Charging Case ensures convenient charging and portability. With Adaptive EQ, music automatically tunes to the shape of your ear for a rich and balanced listening experience. Whether you're on a call or listening to music, AirPods deliver clear sound and all-day comfort."
+        },
+        "processor": {},
+        "storage": [],
+        "colors": []
+      },
+
+      {
+        "id": 15,
+        "name": "AirPods (2nd generation) with Charging Case",
+        "price": 1499000,
+        "brand": "Apple",
+        "category": "Audio",
+        "image": [
+          "AirPods2ndGen.png",
+          "AirPods2ndGen-2.png",
+          "AirPods2ndGen-3.png",
+          "AirPods2ndGen-4.png"
+        ],
+        "description": "The AirPods (2nd generation) with Charging Case provide high-quality audio and effortless connectivity. With easy setup for all your Apple devices, they deliver a magical wireless experience. The Charging Case allows for more than 24 hours of listening time, ensuring your AirPods are always ready to go. With a simple double-tap, you can play or skip forward your favorite tracks, and with Siri voice commands, you have complete control over your music, calls, and more.",
+        "specifications": {
+          "descriptionSpec": "The AirPods (2nd generation) with Charging Case provide high-quality audio and effortless connectivity. With easy setup for all your Apple devices, they deliver a magical wireless experience. The Charging Case allows for more than 24 hours of listening time, ensuring your AirPods are always ready to go. With a simple double-tap, you can play or skip forward your favorite tracks, and with Siri voice commands, you have complete control over your music, calls, and more."
+        },
+        "processor": {},
+        "storage": [],
+        "colors": []
+      },
+
+      {
+        "id": 16,
+        "name": "AirPods Pro (2nd generation) with USB-C",
+        "price": 3499000,
+        "brand": "Apple",
+        "category": "Audio",
+        "image": [
+          "AirPodsPro2ndGen.png",
+          "AirPodsPro2ndGen-2.png",
+          "AirPodsPro2ndGen-3.png",
+          "AirPodsPro2ndGen-4.png"
+        ],
+        "description": "The AirPods Pro (2nd generation) with USB-C deliver exceptional sound quality with active noise cancellation and transparency mode. Featuring spatial audio with dynamic head tracking, these AirPods provide an immersive listening experience. The USB-C charging case ensures convenient charging and portability. With customizable silicone tips, you can enjoy a comfortable fit for all-day wear. Whether you're on a call, listening to music, or using Siri, AirPods Pro deliver clear sound and reliable performance.",
+        "specifications": {
+          "descriptionSpec": "The AirPods Pro (2nd generation) with USB-C deliver exceptional sound quality with active noise cancellation and transparency mode. Featuring spatial audio with dynamic head tracking, these AirPods provide an immersive listening experience. The USB-C charging case ensures convenient charging and portability. With customizable silicone tips, you can enjoy a comfortable fit for all-day wear. Whether you're on a call, listening to music, or using Siri, AirPods Pro deliver clear sound and reliable performance."
+        },
+        "processor": {},
+        "storage": [],
+        "colors": []
+      },
+
+      {
+        "id": 17,
+        "name": "Google Pixel 8 Pro",
+        "price": 11235000,
+        "brand": "Google",
+        "category": "Smartphone",
+        "image": [
+          "Pixel8Pro.png",
+          "Pixel8Pro-2.png",
+          "Pixel8Pro-3.png",
+          "Pixel8Pro-4.png"
+        ],
+        "description": "The Google Pixel 8 Pro features a 6.7-inch OLED display with a 120Hz refresh rate, powered by the Google Tensor G3 processor. It offers multiple storage options and comes in Obsidian, Porcelain, Bay, and Mint colors. The phone supports fast charging, wireless charging, and 5G connectivity.",
+        "specifications": {
+          "descriptionSpec": "The Google Pixel 8 Pro features a 6.7-inch OLED display with a 120Hz refresh rate, powered by the Google Tensor G3 processor. It offers multiple storage options and comes in Obsidian, Porcelain, Bay, and Mint colors. The phone supports fast charging, wireless charging, and 5G connectivity.",
+          "processor": {
+            "title": "Processor",
+            "items": [
+              {
+                "name": "Google Tensor G3",
+                "price": 0
+              }
+            ]
+          },
+          "storage": {
+            "title": "Storage",
+            "items": [
+              {
+                "name": "256GB",
+                "price": 0
+              },
+              {
+                "name": "512GB",
+                "price": 3000000
+              },
+              {
+                "name": "1TB",
+                "price": 4500000
+              }
+            ]
+          },
+          "colors": {
+            "title": "Colors",
+            "items": [
+              {
+                "colorCode": "#000000",
+                "colorName": "Obsidian"
+              },
+              {
+                "colorCode": "#FFFFFF",
+                "colorName": "Porcelain"
+              },
+              {
+                "colorCode": "#87CEEB",
+                "colorName": "Bay"
+              },
+              {
+                "colorCode": "#98FF98",
+                "colorName": "Mint"
+              }
+            ]
+          }
+        }
+      }
+      
+      
+
+
+      
+      
+    
+    
+    
+
+    
+    
+  
+
+
+      
+
+
+    ]
+  }
+
+  
