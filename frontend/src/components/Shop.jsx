@@ -89,7 +89,7 @@ const Shop = () => {
                             value={searchTerm}
                             onChange={(e) => handleSearch(e.target.value)}
                         />
-                        <img src={iconSearch} alt="Search Icon" className="absolute right-3 top-1/2 transform -translate-y-1/2 w-10 h-10 cursor-pointer" />
+                        <img src={iconSearch} alt="Search Icon" className="absolute right-2 top-1/2  transform -translate-y-1/2 w-10 h-10 cursor-pointer" />
                     </div>
                     <BoxCategories/>
                 </div>
@@ -97,11 +97,11 @@ const Shop = () => {
                 <div className="flex flex-col items-center w-full">
                     <div className="relative mb-4 w-full flex justify-end " ref={sortOptionsRef}>
                         <button
-                            className="bg-white w-72 h-12 text-left text-black font-small text-xl border rounded-3xl flex items-center pl-4 "
+                            className="bg-white w-40 h-12 text-left text-black font-small text-xl border rounded-3xl flex items-center pl-4 "
                             onClick={handleSortByClick}
                         >
                             {getSortByText()}
-                            <img src={iconSortBy} alt="Sort Icon" className="w-18 right-0 absolute" />
+                            <img src={iconSortBy} alt="Sort Icon" className="w-14 right-0 absolute" />
                         </button>
                         {showSortOptions && (
                             <div className="z-10 absolute right-0 mt-14 w-72 bg-white text-nt02 text-xl  border rounded-3xl shadow-lg">

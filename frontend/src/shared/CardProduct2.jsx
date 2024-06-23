@@ -70,11 +70,11 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, searchTerm,
                 <div key={id} className="bg-nt09 rounded-3xl p-1 shadow-lg text-center">
                     <Link to={`/detail/${id}`}>
                         <div className="relative w-full items-center justify-center h-48 mb-4"> {/* Fixed height for the image container */}
-                            <img src={`../src/images/home-image/product1/${image[0]}`} alt="Product" className="mt-4  items-center justify-center max-h-full" />
+                            <img src={`../src/images/home-image/product1/${image[0]}`} alt="Product" className="mt-4  items-center justify-center w-full" />
                         </div>
                         <div className="h-24 "> {/* Fixed height for the text container */}
-                            <h2 className="font-semibold text-md mb-2">{name}</h2>
-                            <p className="text-sm ">{formatPrice(price)}</p>
+                            <h2 className="font-semibold text-xl mb-2 ">{name}</h2>
+                            <p className="text-md ">{formatPrice(price)}</p>
                         </div>
                     </Link>
                 </div>

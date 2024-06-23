@@ -63,7 +63,7 @@ const PopularProduct = () => {
             {popularProducts.map((product, index) => (
                 <div key={index} className="bg-nt09 p-4 rounded-3xl pt-0 flex flex-col items-center h-full">
                     <Link to={`/detail/${product.id}`}>
-                        <img src={`./src/images/home-image/product1/${product.image}`} alt={product.name} className="mt-4 mb-2" />
+                        <img src={`images/home-image/product1/${product.image}`} alt={product.name} className="mt-4 mb-2" />
                     </Link>
                     <p className="text-center mb-4 mt-2 text-xl font-bold">{product.name}</p>
                     <p className="text-center mb-4 text-md">{formatPrice(product.price)}</p>
