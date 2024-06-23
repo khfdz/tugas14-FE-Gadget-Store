@@ -65,36 +65,38 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, searchTerm,
 
     return (
         <div>
-            <div className="grid grid-cols-3 gap-6 ml-24">
-                {currentItems.map(({ id, name, price, image }) => (
-                    <div key={id} className="bg-nt09 rounded-4xl p-1 shadow-lg text-center">
-                        <Link to={`/detail/${id}`}>
-                            <div className="relative w-full h-80 items-center justify-center">
-                                <img src={`src/images/home-image/product1/${image[0]}`} alt="Product" className="mt-8 items-center justify-center" />
-                            </div>
-                            <div className="p-4 mt-32">
-                                <h2 className="font-semibold text-3xl mb-2 mt-14 ">{name}</h2>
-                                <p className="text-2xl">{formatPrice(price)}</p>
-                            </div>
-                        </Link>
-                    </div>
-                ))}
-            </div>
-
-            <div className="flex justify-center mt-4 text-2xl">
-                {Array.from({ length: totalPages }, (_, index) => (
-                    <button
-                        key={index}
-                        className={`mx-1 px-3 py-1 rounded-xl w-14 h-14 mt-4 ${
-                            currentPage === index + 1 ? 'bg-colorPrimary1 text-white' : 'bg-nt07 text-white'
-                        }`}
-                        onClick={() => handlePageChange(index + 1)}
-                    >
-                        {index + 1}
-                    </button>
-                ))}
-            </div>
+        <div className="grid grid-cols-3 gap-6 ml-8">
+            {currentItems.map(({ id, name, price, image }) => (
+                <div key={id} className="bg-nt09 rounded-3xl p-1 shadow-lg text-center">
+                    <Link to={`/detail/${id}`}>
+                        <div className="relative w-full items-center justify-center h-48 mb-4"> {/* Fixed height for the image container */}
+                            <img src={`../src/images/home-image/product1/${image[0]}`} alt="Product" className="mt-4  items-center justify-center max-h-full" />
+                        </div>
+                        <div className="h-24 "> {/* Fixed height for the text container */}
+                            <h2 className="font-semibold text-md mb-2">{name}</h2>
+                            <p className="text-sm ">{formatPrice(price)}</p>
+                        </div>
+                    </Link>
+                </div>
+            ))}
         </div>
+    
+        <div className="flex justify-center mt-4 text-xl">
+            {Array.from({ length: totalPages }, (_, index) => (
+                <button
+                    key={index}
+                    className={`mx-1 px-3 py-1 rounded-xl w-10 h-10 mt-4 text-sm ${
+                        currentPage === index + 1 ? 'bg-colorPrimary1 text-white' : 'bg-nt07 text-white'
+                    }`}
+                    onClick={() => handlePageChange(index + 1)}
+                >
+                    {index + 1}
+                </button>
+            ))}
+        </div>
+    </div>
+    
+    
     );
 };
 

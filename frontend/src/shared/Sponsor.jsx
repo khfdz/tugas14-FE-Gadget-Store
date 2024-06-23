@@ -9,13 +9,23 @@ import logoXiaomi from '../images/home-image/sponsor/xiaomiLogo.png'
 
 const Sponsor = () => {
     return (
-        <div className="bg-nt09 md:p-0 mt-20 h-44 ">
-            <div className="flex flex-wrap justify-center items-center h-full mx-auto">
-                <img src={logoApple} alt="Apple" className="mx-4 my-2 md:mx-10 md:my-0" />
-                <img src={logoGoogle} alt="Google" className="mx-4 my-2 md:mx-10 md:my-0" />
-                <img src={logoSamsung} alt="Samsung" className="mx-4 my-2 md:mx-10 md:my-0" />
-                <img src={logoXiaomi} alt="Xiaomi" className="mx-4 my-2 md:mx-10 md:my-0" />
-                <img src={logoSony} alt="Sony" className="mx-4 my-2 md:mx-10 md:my-0" />
+        <div className="bg-nt09  mt-20 h-32 ">
+            <div className="flex flex-wrap justify-center items-center h-full mx-auto gap-14">
+                <a href='https://www.apple.com'>
+                <img src={logoApple} alt="Apple" className="lg:w-[150px]" />
+                </a>
+                <a href='https://www.google.com'>
+                <img src={logoGoogle} alt="Google" className="lg:w-[150px]" />
+                </a>
+                <a href='https://www.samsung.com'>
+                <img src={logoSamsung} alt="Samsung" className="lg:w-[150px]" />
+                </a>
+                <a href='https://www.xiaomi.com'>
+                <img src={logoXiaomi} alt="Xiaomi" className="lg:w-[150px]" />
+                </a>
+                <a href='https://www.sony.com'>
+                <img src={logoSony} alt="Sony" className="lg:w-[130px]" />
+                </a>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { FaTimes, FaBars, FaSignOutAlt } from 'react-icons/fa';
+import { FaTimes, FaBars } from 'react-icons/fa';
 import { NavLink, useLocation } from 'react-router-dom';
 import { UserContext } from '../../src/context/UserContext';
 import iconSearch from '../images/icon/mingcute_search-3-line.png';
@@ -34,7 +34,7 @@ const Navbar = () => {
     };
 
     const navItems = [
-        { link: "Home", path: "/", exact: true },
+        { link: "Home", path: "/" },
         { link: "Shop", path: "/shop" },
         { link: "About", path: "/about" },
         { link: "Contact", path: "/contact" },
@@ -49,12 +49,12 @@ const Navbar = () => {
                 <div className='text-2xl mx-auto flex justify-between font-small'>
                     <div className='space-x-6 md:flex'>
                         <NavLink to='/' className='lg:flex hover:text-secondary text-nt00'>
-                            <span className='text-nt00 text-4xl font-semibold'>Gadget Store</span>
+                            <span className='text-nt00 text-2xl font-semibold'>Gadget Store</span>
                         </NavLink>
                     </div>
-                    <div className='flex space-x-14 text-3xl'>
+                    <div className='flex space-x-14 text-xl'>
                         <ul className='hidden md:flex space-x-10'>
-                            {navItems.map(({ link, path, onClick, exact }) => (
+                            {navItems.map(({ link, path, onClick }) => (
                                 <li key={link}>
                                     {onClick ? (
                                         <button
@@ -66,7 +66,6 @@ const Navbar = () => {
                                     ) : (
                                         <NavLink
                                             to={path}
-                                            exact={exact}
                                             className={location.pathname === path ? "text-colorPrimary1" : "text-white hover:text-secondary"}
                                         >
                                             {link}
@@ -77,11 +76,11 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='space-x-6 hidden md:flex'>
-                        <img src={iconSearch} alt="Search Icon" className='w-12 inline-block' />
+                        <img src={iconSearch} alt="Search Icon" className='w-8 h-8 inline-block' />
                         {user ? (
-                            <img src={iconProfilActive} alt="Profile Icon" className='w-12 inline-block' />
+                            <img src={iconProfilActive} alt="Profile Icon" className='w-8 h-8 inline-block' />
                         ) : (
-                            <img src={iconProfil} alt="Profile Icon" className='w-12 inline-block' />
+                            <img src={iconProfil} alt="Profile Icon" className='w-8 h-8 inline-block' />
                         )}
                         <NavLink
                             to="/cart"
@@ -92,7 +91,7 @@ const Navbar = () => {
                                 return isActive ? 'text-navActive' : 'text-white hover:text-secondary';
                             }}
                         >
-                            <img src={isCartActive ? iconCartActive : iconCart} alt="Cart Icon" className='w-12 inline-block items-center cursor-pointer' />
+                            <img src={isCartActive ? iconCartActive : iconCart} alt="Cart Icon" className='w-8 h-8  inline-block items-center cursor-pointer' />
                             {totalQuantityInCart > 0 && (
                                 <span className="bg-red-500 text-md text-white rounded-full w-8 h-8 top-6 text-center absolute ">{totalQuantityInCart}</span>
                             )}
@@ -118,7 +117,6 @@ const Navbar = () => {
                         ) : (
                             <NavLink
                                 to={path}
-                                exact={true}
                                 className={location.pathname === path ? "text-red-500" : "hover:text-pr08"}
                             >
                                 {link}

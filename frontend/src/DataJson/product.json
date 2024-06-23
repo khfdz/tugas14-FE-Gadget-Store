@@ -766,7 +766,7 @@
 
     {
       "id": 13,
-      "name": "AirPods (3rd) with MagSafe Charging Case",
+      "name": "AirPods (3rd) MagSafe",
       "price": 2699000,
       "brand": "Apple",
       "category": "Audio",
@@ -787,7 +787,7 @@
 
       {
         "id": 14,
-        "name": "AirPods (3rd) with Lightning Charging Case",
+        "name": "AirPods (3rd) Lightning",
         "price": 2499000,
         "brand": "Apple",
         "category": "Audio",
@@ -808,7 +808,7 @@
 
       {
         "id": 15,
-        "name": "AirPods (2nd generation) with Charging Case",
+        "name": "AirPods (2nd)",
         "price": 1499000,
         "brand": "Apple",
         "category": "Audio",
@@ -829,7 +829,7 @@
 
       {
         "id": 16,
-        "name": "AirPods Pro (2nd generation) with USB-C",
+        "name": "AirPods Pro (2nd) USB-C",
         "price": 3499000,
         "brand": "Apple",
         "category": "Audio",

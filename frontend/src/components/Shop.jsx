@@ -78,18 +78,18 @@ const Shop = () => {
     return (
         <div>
             <Navbar />
-            <Banner0 title="Products" breadcrumbs={['Home', 'Shop']} />
+            <Banner0 title="Products" breadcrumbs={['Home', 'Products']} />
 
             <div className="flex justify-between mx-14 my-8">
                 <div>
                     <div className="relative mb-4">
                         <input
                             placeholder="Search Product"
-                            className="text-black pl-10 pr-24 py-2 border text-2xl rounded-3xl w-full h-14 text-left"
+                            className="text-black pl-4 pr-24 py-2 border text-xl rounded-3xl w-full h-12 text-left"
                             value={searchTerm}
                             onChange={(e) => handleSearch(e.target.value)}
                         />
-                        <img src={iconSearch} alt="Search Icon" className="absolute right-3 top-1/2 transform -translate-y-1/2 w-12 h-12 cursor-pointer" />
+                        <img src={iconSearch} alt="Search Icon" className="absolute right-3 top-1/2 transform -translate-y-1/2 w-10 h-10 cursor-pointer" />
                     </div>
                     <BoxCategories/>
                 </div>
@@ -97,14 +97,14 @@ const Shop = () => {
                 <div className="flex flex-col items-center w-full">
                     <div className="relative mb-4 w-full flex justify-end " ref={sortOptionsRef}>
                         <button
-                            className="bg-white w-72 h-14 text-left text-black font-small text-2xl border rounded-3xl flex items-center pl-4 "
+                            className="bg-white w-72 h-12 text-left text-black font-small text-xl border rounded-3xl flex items-center pl-4 "
                             onClick={handleSortByClick}
                         >
                             {getSortByText()}
-                            <img src={iconSortBy} alt="Sort Icon" className="ml-2 w-18 right-2 absolute" />
+                            <img src={iconSortBy} alt="Sort Icon" className="w-18 right-0 absolute" />
                         </button>
                         {showSortOptions && (
-                            <div className="z-10 absolute right-0 mt-16 w-72 bg-white text-nt02 text-2xl  border rounded-3xl shadow-lg">
+                            <div className="z-10 absolute right-0 mt-14 w-72 bg-white text-nt02 text-xl  border rounded-3xl shadow-lg">
                                 <button
                                     className={`block w-full px-4 py-2 text-left rounded-t-3xl  hover:bg-gray-200 ${sortBy === '' ? 'bg-gray-200' : ''}`}
                                     onClick={() => handleSortOptionClick('')}

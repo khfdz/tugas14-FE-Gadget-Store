@@ -17,7 +17,7 @@ const Contact = () => {
             <div className="grid grid-cols-2 ml-12 gap-20 mr-24 ml-32 ">
     <div>
 
-        <div className="flex items-center mb-16 mt-20"> {/* Gunakan flexbox */}
+        <div className="flex items-center mb-16 mt-20">
             <div className="bg-nt09 rounded-6xl w-40 h-40 flex items-center justify-center">
             <img src={iconEmail} alt="Email" className="w-28 h-28 " />
             </div>
@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
         
         
-        <div className="flex items-center mb-16"> {/* Gunakan flexbox */}
+        <div className="flex items-center mb-16"> 
             <div className="bg-nt09 rounded-6xl w-40 h-40 flex items-center justify-center">
             <img src={iconTelp} alt="Email" className="w-28 h-28 " />
             </div>
@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
         </div>
 
-        <div className="flex items-center mb-16"> {/* Gunakan flexbox */}
+        <div className="flex items-center mb-16"> 
             <div className="bg-nt09 rounded-6xl w-40 h-40 flex items-center justify-center">
             <img src={iconLocation} alt="Email" className="w-28 h-28 " />
             </div>

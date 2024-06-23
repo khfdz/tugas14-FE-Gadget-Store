@@ -4,15 +4,14 @@ import Banner0 from "../shared/Banner0";
 import Sponsor from "../shared/Sponsor";
 import News from "../shared/News";
 import Copyright from "../shared/Copyright";
-import { UserContext } from '../../src/context/UserContext'; // Import UserContext
-import cartData from '../../src/DataJson/cart.json'; // Import data from cartData.json
-import { formatPrice } from '../utils'; // Import formatPrice function
+import { UserContext } from '../../src/context/UserContext';
+import cartData from '../../src/DataJson/cart.json';
+import { formatPrice } from '../utils'; 
 
 const Cart = () => {
-    const { user } = useContext(UserContext); // Menggunakan UserContext untuk mendapatkan user yang sedang login
-    const [cartItems, setCartItems] = useState([]); // State untuk menyimpan item keranjang
+    const { user } = useContext(UserContext); 
+    const [cartItems, setCartItems] = useState([]);
 
-    // Mengambil data keranjang berdasarkan userId
     useEffect(() => {
         const fetchCartData = () => {
             if (user) {
@@ -26,24 +25,20 @@ const Cart = () => {
         fetchCartData();
     }, [user]);
 
-    // Menghitung subtotal dari suatu item
     const calculateItemSubtotal = (item) => {
         return item.price * item.quantity;
     };
 
-    // Menghitung total harga belanja
     const calculateTotal = () => {
         return cartItems.reduce((acc, item) => acc + calculateItemSubtotal(item), 0);
     };
 
-    // Handle penambahan jumlah barang
     const increaseQuantity = (index) => {
         const updatedCartItems = [...cartItems];
         updatedCartItems[index].quantity += 1;
         setCartItems(updatedCartItems);
     };
 
-    // Handle pengurangan jumlah barang
     const decreaseQuantity = (index) => {
         const updatedCartItems = [...cartItems];
         if (updatedCartItems[index].quantity > 1) {
@@ -52,7 +47,6 @@ const Cart = () => {
         }
     };
 
-    // Handle penghapusan item dari keranjang
     const handleRemoveItem = (index) => {
         const updatedCartItems = cartItems.filter((item, idx) => idx !== index);
         setCartItems(updatedCartItems);
@@ -64,10 +58,8 @@ const Cart = () => {
             <Banner0 title="Shop Cart" breadcrumbs={["Home", "Cart"]} />
 
             <div className="ml-12 mr-12 mt-20 flex">
-                {/* Bagian Kiri */}
                 <div className="w-3/4">
                     <div className="bg-nt07 rounded-4xl p-10 KIRI mr-10 text-center">
-                        {/* Tabel untuk Detail Produk, Quantity, dan Subtotal */}
                         <table className="w-full">
                             <thead className="text-4xl">
                                 <tr className=''>
@@ -109,7 +101,6 @@ const Cart = () => {
                     </div>
                 </div>
 
-                {/* Bagian Kanan */}
                 <div className="w-1/4">
                     <div className="KANAN">
                         <div className="bg-nt07 mb-6 rounded-4xl p-8">
