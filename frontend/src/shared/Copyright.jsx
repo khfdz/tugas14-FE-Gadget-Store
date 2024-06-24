@@ -6,7 +6,7 @@ import iconFb from '../images/icon/iconFb.png';
 
 const Copyright = () => {
     return (
-        <div className=" px-4 py-12 bg-nt09">
+        <div className=" px-4 py-6 bg-nt09">
             <div className="flex ml-20">
                 <div className="  ">
                     <p className="font-bold text-xl mb-4">Gadget Store</p>

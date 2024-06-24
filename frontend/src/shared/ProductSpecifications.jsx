@@ -4,10 +4,10 @@ import React from 'react';
 
 const ProductSpecifications = ({ product }) => {
     return (
-        <div>
+        <div className=''> 
             <div>
-                <p className="titleSpec font-semibold text-4xl mb-4">Specification</p>
-                <p className="descSpec text-2xl font-small pr-20 tracking-wider leading-relaxed text-justify">
+                <p className="titleSpec font-semibold text-2xl font-bold mb-4">Specification</p>
+                <p className="text-md font-small  leading-relaxed text-justify">
                     {product.specifications.descriptionSpec}
                 </p>
             </div>

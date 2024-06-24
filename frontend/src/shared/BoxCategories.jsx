@@ -33,7 +33,7 @@ const BoxCategories = () => {
     return (
         <div className="border-4 rounded-xl border-nt09 p-4 ">
             <div className="mb-12">
-                <h3 className="text-3xl font-semibold mb-4">Categories</h3>
+                <h3 className="text-2xl font-semibold mb-4">Categories</h3>
                 <div className="text-xl font-small ">
                     {['Smartphone', 'Laptop', 'Audio', 'Console', 'Accessories', 'Wearables'].map(category => (
                         <label key={category} className=" flex items-center mb-6">
@@ -50,7 +50,7 @@ const BoxCategories = () => {
                 </div>
             </div>
             <div className="mb-12">
-                <h3 className="text-3xl font-semibold mb-4">Filter By Brand</h3>
+                <h3 className="text-2xl font-semibold mb-4">Filter By Brand</h3>
                 <div className='text-xl font-small'>
                     {['Apple', 'Samsung', 'Xiaomi', 'Google', 'Sony'].map(brand => (
                         <label key={brand} className="flex items-center mb-6">
@@ -67,11 +67,11 @@ const BoxCategories = () => {
                 </div>
             </div>
             <div className="mb-4">
-                <h3 className="text-3xl font-semibold mb-4">Filter By Price</h3>
-                <div className="flex flex-col font-small text-2xl">
+                <h3 className="text-2xl font-semibold mb-4">Filter By Price</h3>
+                <div className="flex flex-col font-small text-xl">
                     <input
                         type="number"
-                        className="p-1 border rounded bg-nt09 border-none mb-6 h-16 w-full text-center text-xl"
+                        className="p-1 border rounded bg-nt09 border-none mb-6 h-16 w-full text-center "
                         placeholder="Price Min"
                         value={minPrice}
                         onChange={(e) => setMinPrice(e.target.value)}

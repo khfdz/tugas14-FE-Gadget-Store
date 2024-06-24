@@ -21,7 +21,7 @@ const Login = () => {
   const handleLogin = () => {
     if (login(email, password)) {
       alert('You have successfully logged in');
-      navigate('/'); // Navigate to home page
+      navigate('/');
     } else {
       alert('Invalid email or password');
     }
@@ -33,53 +33,54 @@ const Login = () => {
       <img src={imageLogin} alt="Login" className="absolute inset-0 object-cover w-full h-full" />
       
       {/* Form Sign In */}
-      <div className="absolute right-0  flex-col items-center justify-center h-full w-1/2 p-40 bg-nt07 rounded-lg">
-        <h2 className="text-6xl font-bold mb-6 text-center mt-28">Sign In</h2>
+      <div className="absolute right-0  flex-col items-center justify-center h-full w-1/2 pr-20 pl-20 pt-20 bg-nt07 rounded-lg">
+        <h2 className="text-4xl font-bold mb-6 text-center mt-8">Sign In</h2>
 
         <div className="relative ">
-          <img src={iconProfile} alt="Profile Icon" className="absolute left-3 top-3.5 w-8" />
+          <img src={iconProfile} alt="Profile Icon" className="absolute left-3.5 top-4 w-6" />
           <input
             type="email"
             placeholder="Your Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="text-3xl block w-full h-16 p-3 pl-16 rounded-2xl mb-4 bg-nt09"
+            className="text-md block w-full h-14 p-3 pl-16 rounded-2xl mb-4 bg-nt09"
           />
         </div>
 
         <div className="relative ">
-          <img src={iconPassword} alt="Password Icon" className="absolute left-3.5 top-3.5 w-8" />
+          <img src={iconPassword} alt="Password Icon" className="absolute left-3.5 top-4 w-6" />
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Your Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="block w-full p-3 pl-16 text-3xl rounded-2xl mb-4 bg-nt09 h-16 "
+            className="block w-full  pl-16 text-md rounded-2xl mb-4 bg-nt09 h-14 "
           />
           <img
             src={iconEyes}
             alt="Eyes Icon"
-            className="absolute right-5 top-4 w-8 cursor-pointer"
+            className="absolute right-5 top-4 w-6 cursor-pointer"
             onClick={togglePasswordVisibility}
           />
         </div>
 
-        <p className="text-2xl text-right mb-2"><a href="#" className="">Forgot Password?</a></p>
+        <p className="text-md text-right mb-4"><a href="#" className="">Forgot Password?</a></p>
         
         <button
           onClick={handleLogin}
-          className='w-full h-16 bg-colorPrimary1  font-small py-2 px-6 rounded-2xl mb-2 text-3xl'
+          className='w-full bg-colorPrimary1   py-2  rounded-2xl mb-2 text-md h-12'
         >
           Sign In
         </button>
 
-        <button className="w-full h-16 text-white font-bold py-3 px-6 rounded-2xl mb-4 relative border-2 border-colorPrimary1 mt-3">
-          <img src={iconGoogle} alt="Google Icon" className="absolute left-3 top-3 w-10 h-10" />
-          <span className="ml-10 text-small font-small text-3xl">Sign In with Google</span>
+        <button className="w-full text-white  py-2 rounded-2xl mb-4 relative border-2 border-colorPrimary1 mt-3 flex items-center justify-center">
+          <img src={iconGoogle} alt="Google Icon" className="w-6 h-6 mr-2" />
+          <span className="text-md">Sign In with Google</span>
         </button>
+
         
         {/* Link to Registration Page */}
-        <p className="text-2xl text-center">Don't have an account? <Link to="/register" className="text-colorPrimary1">Sign Up</Link></p>
+        <p className="text-md text-center">Don't have an account? <Link to="/register" className="text-colorPrimary1">Sign Up</Link></p>
       </div>
     </div>
   );

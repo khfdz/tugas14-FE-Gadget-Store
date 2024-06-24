@@ -85,7 +85,7 @@ const Shop = () => {
                     <div className="relative mb-4">
                         <input
                             placeholder="Search Product"
-                            className="text-black pl-4 pr-24 py-2 border text-xl rounded-3xl w-full h-12 text-left"
+                            className="text-black pl-4 pr-24 py-2 border text-md rounded-3xl w-full h-12 text-left"
                             value={searchTerm}
                             onChange={(e) => handleSearch(e.target.value)}
                         />
@@ -97,34 +97,34 @@ const Shop = () => {
                 <div className="flex flex-col items-center w-full">
                     <div className="relative mb-4 w-full flex justify-end " ref={sortOptionsRef}>
                         <button
-                            className="bg-white w-40 h-12 text-left text-black font-small text-xl border rounded-3xl flex items-center pl-4 "
+                            className="bg-white w-52 h-12 text-left text-black font-small text-md border rounded-3xl flex items-center pl-4 "
                             onClick={handleSortByClick}
                         >
                             {getSortByText()}
                             <img src={iconSortBy} alt="Sort Icon" className="w-14 right-0 absolute" />
                         </button>
                         {showSortOptions && (
-                            <div className="z-10 absolute right-0 mt-14 w-72 bg-white text-nt02 text-xl  border rounded-3xl shadow-lg">
+                            <div className="z-10 absolute text-black right-0 mt-13 w-52 bg-white text-nt02 text-md  border rounded-3xl shadow-lg">
                                 <button
-                                    className={`block w-full px-4 py-2 text-left rounded-t-3xl  hover:bg-gray-200 ${sortBy === '' ? 'bg-gray-200' : ''}`}
+                                    className={`text-black block w-full px-4 py-2 text-left rounded-t-3xl  hover:bg-gray-200 ${sortBy === '' ? 'bg-gray-200' : ''}`}
                                     onClick={() => handleSortOptionClick('')}
                                 >
                                     Default
                                 </button>
                                 <button
-                                    className={`block w-full px-4 py-2 text-left hover:bg-gray-200 ${sortBy === 'priceAsc' ? 'bg-gray-200' : ''}`}
+                                    className={`block w-full text-black px-4 py-2 text-left hover:bg-gray-200 ${sortBy === 'priceAsc' ? 'bg-gray-200' : ''}`}
                                     onClick={() => handleSortOptionClick('priceAsc')}
                                 >
                                     Price: Low to High
                                 </button>
                                 <button
-                                    className={`block w-full px-4 py-2 text-left hover:bg-gray-200 ${sortBy === 'priceDesc' ? 'bg-gray-200' : ''}`}
+                                    className={`block w-full text-black px-4 py-2 text-left hover:bg-gray-200 ${sortBy === 'priceDesc' ? 'bg-gray-200' : ''}`}
                                     onClick={() => handleSortOptionClick('priceDesc')}
                                 >
                                     Price: High to Low
                                 </button>
                                 <button
-                                    className={`block w-full px-4 py-2 text-left rounded-b-3xl hover:bg-gray-200 ${sortBy === 'Popular' ? 'bg-gray-200' : ''}`}
+                                    className={`block w-full text-black px-4 py-2 text-left rounded-b-3xl hover:bg-gray-200 ${sortBy === 'Popular' ? 'bg-gray-200' : ''}`}
                                     onClick={() => handleSortOptionClick('popular')}
                                 >
                                     Popular

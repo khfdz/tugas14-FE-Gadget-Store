@@ -91,9 +91,9 @@ const Navbar = () => {
                                 return isActive ? 'text-navActive' : 'text-white hover:text-secondary';
                             }}
                         >
-                            <img src={isCartActive ? iconCartActive : iconCart} alt="Cart Icon" className='w-8 h-8  inline-block items-center cursor-pointer' />
+                            <img src={isCartActive ? iconCartActive : iconCart} alt="Cart Icon" className='w-8 h-8 mb-2 inline-block items-center cursor-pointer' />
                             {totalQuantityInCart > 0 && (
-                                <span className="bg-red-500 text-md text-white rounded-full w-8 h-8 top-6 text-center absolute ">{totalQuantityInCart}</span>
+                                <span className="bg-colorPrimary1 text-sm text-white rounded-full w-5 h-5 top-6 text-center absolute ">{totalQuantityInCart}</span>
                             )}
                         </NavLink>
                     </div>

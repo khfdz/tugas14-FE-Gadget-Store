@@ -11,10 +11,10 @@ const About = () => {
       <Navbar />
       <Banner0 title="About" breadcrumbs={["Home", "About"]} />
     
-      <div className="grid grid-cols-2 ml-12 gap-20">
+      <div className="grid grid-cols-2 ml-12 gap-20 mt-16">
         <div>
-        <p className="text-4xl font-semibold mb-6">Who We Are</p>
-        <p className="text-2xl text-justify ">
+        <p className="text-2xl font-semibold mb-6">Who We Are</p>
+        <p className="text-md text-justify ">
           When, while the lovely valley teems with vapour around me, and the
           meridian sun strikes the upper surface of the impenetrable foliage of
           my trees, and but a few stray. <br /> <br/>
@@ -39,8 +39,9 @@ const About = () => {
 
         </p>
         </div>
-        <img className="rounded-4xl mr-" src={AboutImage} alt="About " />
-
+        <div className="mr-12">
+        <img className="rounded-4xl " src={AboutImage} alt="About " />
+        </div>
 
 
       </div>

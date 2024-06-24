@@ -31,7 +31,6 @@ const Detail = () => {
             setStartIndex(0);
             setTotalPrice(foundProduct.price);
 
-            // Apply discount logic based on brand and category
             if (foundProduct.brand.toLowerCase() === 'apple' && foundProduct.category.toLowerCase() === 'audio') {
                 const discountedPrice = foundProduct.price * 0.9;
                 setTotalPrice(discountedPrice);
@@ -62,7 +61,6 @@ const Detail = () => {
             return;
         }
         
-        // Update totalPrice based on selected storage price
         const prevStorage = product.specifications.storage.items.find(item => item.name === selectedStorage);
         const newStorage = product.specifications.storage.items.find(item => item.name === storage);
         
@@ -84,8 +82,7 @@ const Detail = () => {
         if (processorName === selectedProcessor) {
             return;
         }
-        
-        // Update totalPrice based on selected processor price
+
         const prevProcessor = product.specifications.processor.items.find(item => item.name === selectedProcessor);
         const newProcessor = product.specifications.processor.items.find(item => item.name === processorName);
         
@@ -109,7 +106,6 @@ const Detail = () => {
         return <div>Product not found</div>;
     }
 
-    // Console log to check if user is logged in
     console.log('Nama User Login:', user ? user.id : 'Belum login');
     console.log('Nama User email:', user ? user.email : 'Belum login');
     console.log('Nama User phone:', user ? user.phone : 'Belum login');
@@ -119,7 +115,7 @@ const Detail = () => {
             <Navbar />
             <Banner0 title="Product" breadcrumbs={['Home', 'Product', product.name]} />
 
-            <div className="grid grid-cols-2 justify-center ml-24">
+            <div className="grid grid-cols-2 justify-center ml-24 mt-12 ">
                 <ProductImage
                     selectedImage={selectedImage}
                     imagesToShow={imagesToShow}
@@ -139,11 +135,11 @@ const Detail = () => {
                     
                 />
             </div>
-
             <div className='grid grid-cols-2 ml-24'>
                 <ProductSpecifications product={product} />
                 <ReviewSection productId={product.id} />
             </div>
+
 
             <RelatedProduct productsData={productsData} brand={product.brand} productId={product.id} category={product.category} />
 

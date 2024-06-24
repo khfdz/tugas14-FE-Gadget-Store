@@ -69,8 +69,8 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, searchTerm,
             {currentItems.map(({ id, name, price, image }) => (
                 <div key={id} className="bg-nt09 rounded-3xl p-1 shadow-lg text-center">
                     <Link to={`/detail/${id}`}>
-                        <div className="relative w-full items-center justify-center h-48 mb-4"> {/* Fixed height for the image container */}
-                            <img src={`../src/images/home-image/product1/${image[0]}`} alt="Product" className="mt-4  items-center justify-center w-full" />
+                        <div className="relative w-full items-center justify-center h-48 mb-6"> {/* Fixed height for the image container */}
+                            <img src={`images/home-image/product1/${image[0]}`} alt="Product" className="mt-4  items-center justify-center w-full " />
                         </div>
                         <div className="h-24 "> {/* Fixed height for the text container */}
                             <h2 className="font-semibold text-xl mb-2 ">{name}</h2>
