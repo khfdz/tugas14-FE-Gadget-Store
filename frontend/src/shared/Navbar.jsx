@@ -39,6 +39,7 @@ const Navbar = () => {
         { link: "About", path: "/about" },
         { link: "Contact", path: "/contact" },
         { link: user ? "Logout" : "Login", onClick: user ? handleLogout : null, path: user ? null : "/login" },
+        { link: "Api", path: "/api" },
     ];
 
     const totalQuantityInCart = cartItems.reduce((total, item) => total + item.quantity, 0);

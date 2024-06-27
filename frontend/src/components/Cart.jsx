@@ -6,10 +6,10 @@ import News from "../shared/News";
 import Copyright from "../shared/Copyright";
 import { UserContext } from '../../src/context/UserContext';
 import cartData from '../../src/DataJson/cart.json';
-import { formatPrice } from '../utils'; 
+import { formatPrice } from '../utils';
 
 const Cart = () => {
-    const { user } = useContext(UserContext); 
+    const { user } = useContext(UserContext);
     const [cartItems, setCartItems] = useState([]);
 
     useEffect(() => {
@@ -52,6 +52,8 @@ const Cart = () => {
         setCartItems(updatedCartItems);
     };
 
+    const shippingCost = cartItems.length > 0 ? 33000 : 0;
+
     return (
         <div>
             <Navbar />
@@ -61,7 +63,7 @@ const Cart = () => {
                 <div className="w-3/4">
                     <div className="bg-nt07 rounded-4xl p-10 KIRI mr-10 text-center">
                         <table className="w-full">
-                            <thead className="text-4xl">
+                            <thead className="text-xl">
                                 <tr className=''>
                                     <th className="pb-4 text-center">Product</th>
                                     <th className="pb-4 text-center">Detail</th>
@@ -70,29 +72,29 @@ const Cart = () => {
                                     <th className="pb-4 text-center">Action</th>
                                 </tr>
                             </thead>
-                            <tbody className="text-3xl">
+                            <tbody className="textmdxl">
                                 {cartItems.map((item, index) => (
                                     <tr key={item.id}>
                                         <td className="border px-4 py-2">
-                                            <img src={`../src/images/home-image/product1/${item.image}`} alt={item.name} className="w-[300px] mx-auto" />
+                                            <img src={`../src/images/home-image/product1/${item.image}`} alt={item.name} className="h-full mx-auto" />
                                         </td>
-                                        <td className="border px-4 py-2">
-                                            <p className="font-semibold">{item.name}</p>
+                                        <td className="border px-4 py-2 text-sm">
+                                            <p className="font-small ">{item.name}</p>
                                             <p>{item.color}</p>
                                             <p>{item.storage}</p>
                                         </td>
                                         <td className="border px-4 py-2">
                                             <div className="flex items-center justify-center">
-                                                <button onClick={() => decreaseQuantity(index)} className="bg-colorPrimary1 text-white rounded-full w-12 h-12 text-3xl font-semibold">-</button>
+                                                <button onClick={() => decreaseQuantity(index)} className="bg-colorPrimary1 text-white rounded-full w-6 h-6 text-md font-semibold">-</button>
                                                 <p className="mx-4">{item.quantity}</p>
-                                                <button onClick={() => increaseQuantity(index)} className="bg-colorPrimary1 text-white rounded-full w-12 h-12 text-3xl font-semibold">+</button>
+                                                <button onClick={() => increaseQuantity(index)} className="bg-colorPrimary1 text-white rounded-full w-6 h-6 text-md font-semibold">+</button>
                                             </div>
                                         </td>
-                                        <td className="border px-4 py-2">
+                                        <td className="border px-4 py-2 text-sm">
                                             <p>{formatPrice(calculateItemSubtotal(item))}</p>
                                         </td>
                                         <td className="border px-4 py-2">
-                                            <button onClick={() => handleRemoveItem(index)} className="bg-red-600 text-white px-4 py-2 rounded-lg">Remove</button>
+                                            <button onClick={() => handleRemoveItem(index)} className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm">Remove</button>
                                         </td>
                                     </tr>
                                 ))}
@@ -103,29 +105,27 @@ const Cart = () => {
 
                 <div className="w-1/4">
                     <div className="KANAN">
-                        <div className="bg-nt07 mb-6 rounded-4xl p-8">
-                            <p className="text-3xl mb-12 font-semibold">Cart Totals</p>
+                        <div className="bg-nt07 mb-6 rounded-4xl p-3">
+                            <p className="text-xl mb-12 font-semibold text-center">Cart Totals</p>
                             <div className="grid grid-cols-2">
-                                <div className="text-2xl">
+                                <div className="text-sm">
                                     <p className="mb-8"> Sub Total </p>
                                     <p className="mb-8">Shipping</p>
                                     <p className="mb-8">Discount</p>
                                     <p className="mb-8">Total</p>
                                 </div>
-                                <div className="text-2xl text-left">
+                                <div className="text-sm text-left">
                                     <p className="mb-8">{formatPrice(calculateTotal())}</p>
-                                    <p className="mb-8">{formatPrice(33000)}</p>
-                                    <p className="mb-8">
-                                    IDR 0
-                                    </p>
-                                    <p className="mb-8">{formatPrice(calculateTotal() + 33000)}</p>
+                                    <p className="mb-8">{formatPrice(shippingCost)}</p>
+                                    <p className="mb-8">IDR 0</p>
+                                    <p className="">{formatPrice(calculateTotal() + shippingCost)}</p>
                                 </div>
                             </div>
-                            <button className="btnPrimary w-full h-16 text-3xl">Proceed to Check Out</button>
+                            <button className="btnPrimary w-full h-10 text-sm">Proceed to Check Out</button>
                         </div>
-                        <div className="bg-nt07 grid grid-rows-2 p-6 rounded-4xl">
-                            <input placeholder="Enter Coupon Promo" className="bg-nt09 p-2 text-center h-20 rounded-4xl mb-6 mt-8 text-3xl"></input>
-                            <button className="btnPrimary w-full h-[80px] text-3xl">Submit</button>
+                        <div className="bg-nt07 grid grid-rows-2 p-6 rounded-4xl h-36 gap-4">
+                            <input placeholder="Enter Coupon Promo" className="bg-nt09 p-2 text-center h-10 rounded-4xl text-sm"></input>
+                            <button className="btnPrimary w-full h-10 text-sm">Submit</button>
                         </div>
                     </div>
                 </div>

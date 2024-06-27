@@ -1,0 +1,229 @@
+{
+    "name": "Maira Dress",
+    "id": 28545,
+    "parent": 0,
+    "photo": "https://sistemtoko.com/img/user/hijja/product/8glmve-edit-img-0148-1-1-jpg.JPG",
+    "photo_type": "customize",
+    "total": 0,
+    "display": "product",
+    "totalPrice": 0,
+    "stock_changes": 0,
+    "stock": 0,
+    "varian": [
+        {
+            "value": "S"
+        }
+    ],
+    "plain_varian": [
+        {
+            "id": 24231,
+            "value": "S"
+        }
+    ],
+    "childs": [
+        {
+            "name": "Maira Dress",
+            "id": 28546,
+            "category_id": null,
+            "category_name": null,
+            "submit": "success",
+            "parent": 28545,
+            "photo": "https://sistemtoko.com/img/user/hijja/product/8glmve-edit-img-0148-1-1-jpg.JPG",
+            "photo_type": "get_from_parent",
+            "buyPrice": 231000,
+            "total": 0,
+            "display": "product",
+            "totalPrice": 0,
+            "stock_changes": 0,
+            "stock": 0,
+            "varian": [
+                {
+                    "value": "M"
+                }
+            ],
+            "plain_varian": [
+                {
+                    "id": 24232,
+                    "value": "M"
+                }
+            ],
+            "childs": [],
+            "type": "child",
+            "local": 0,
+            "status": "active",
+            "description": "PRE ORDER 21 Hari | Bahan : Cotton Madina | Sifat bahan : Lembut, Menyerap Keringat | Ukuran : Medium ; Lingkar Dada 98 cm, Panjang Baju 140 cm, Panjang lengan 56 cm ) | Detail : Wudhlu dan Busui Friendly, Saku Luar",
+            "last_sync": "2019-04-25 10:06:03",
+            "currency": "Rp.",
+            "plain_price": 330000,
+            "price_before_discount": "0.0000",
+            "price": "330.000",
+            "publish": "",
+            "code": "P3065",
+            "plain_code": "P3065",
+            "updated_at": {
+                "date": "2019-05-06 10:58:57.000000",
+                "timezone_type": 3,
+                "timezone": "Asia/Jakarta"
+            },
+            "plain_code_next": 1,
+            "photos": [],
+            "weight": 350,
+            "unlimited": 0,
+            "publish_web": 1,
+            "flash_price": 0,
+            "flash_date": "0000-00-00 00:00:00",
+            "keywords": [
+                {
+                    "text": "Ant",
+                    "id": 145
+                }
+            ]
+        },
+        {
+            "name": "Maira Dress",
+            "id": 28547,
+            "category_id": null,
+            "category_name": null,
+            "submit": "success",
+            "parent": 28545,
+            "photo": "https://sistemtoko.com/img/user/hijja/product/8glmve-edit-img-0148-1-1-jpg.JPG",
+            "photo_type": "get_from_parent",
+            "buyPrice": 231000,
+            "total": 0,
+            "display": "product",
+            "totalPrice": 0,
+            "stock_changes": 0,
+            "stock": 0,
+            "varian": [
+                {
+                    "value": "L"
+                }
+            ],
+            "plain_varian": [
+                {
+                    "id": 24233,
+                    "value": "L"
+                }
+            ],
+            "childs": [],
+            "type": "child",
+            "local": 0,
+            "status": "active",
+            "description": "PRE ORDER 21 Hari | Bahan : Cotton Madina | Sifat bahan : Lembut, Menyerap Keringat | Ukuran : Large ; Lingkar Dada 100 cm, Panjang Baju 140 cm, Panjang lengan 56 cm ) | Detail : Wudhlu dan Busui Friendly, Saku Luar",
+            "last_sync": "2019-04-25 10:07:09",
+            "currency": "Rp.",
+            "plain_price": 330000,
+            "price_before_discount": "0.0000",
+            "price": "330.000",
+            "publish": "",
+            "code": "P3066",
+            "plain_code": "P3066",
+            "updated_at": {
+                "date": "2019-04-25 10:07:09.000000",
+                "timezone_type": 3,
+                "timezone": "Asia/Jakarta"
+            },
+            "plain_code_next": 1,
+            "photos": [],
+            "weight": 350,
+            "unlimited": 0,
+            "publish_web": 1,
+            "flash_price": 0,
+            "flash_date": "0000-00-00 00:00:00",
+            "keywords": [
+                {
+                    "text": "Ant",
+                    "id": 145
+                }
+            ]
+        },
+        {
+            "name": "Maira Dress",
+            "id": 28548,
+            "category_id": null,
+            "category_name": null,
+            "submit": "success",
+            "parent": 28545,
+            "photo": "https://sistemtoko.com/img/user/hijja/product/8glmve-edit-img-0148-1-1-jpg.JPG",
+            "photo_type": "get_from_parent",
+            "buyPrice": 231000,
+            "total": 0,
+            "display": "product",
+            "totalPrice": 0,
+            "stock_changes": 0,
+            "stock": 0,
+            "varian": [
+                {
+                    "value": "XL"
+                }
+            ],
+            "plain_varian": [
+                {
+                    "id": 24234,
+                    "value": "XL"
+                }
+            ],
+            "childs": [],
+            "type": "child",
+            "local": 0,
+            "status": "active",
+            "description": "PRE ORDER 21 Hari | Bahan : Cotton Madina | Sifat bahan : Lembut, Menyerap Keringat | Ukuran : Extra Large; Lingkar Dada 105 cm, Panjang Baju 140 cm, Panjang lengan 56 cm ) | Detail : Wudhlu dan Busui Friendly, Saku Luar",
+            "last_sync": "2019-04-25 10:09:18",
+            "currency": "Rp.",
+            "plain_price": 330000,
+            "price_before_discount": "0.0000",
+            "price": "330.000",
+            "publish": "",
+            "code": "P3067",
+            "plain_code": "P3067",
+            "updated_at": {
+                "date": "2019-04-25 10:09:18.000000",
+                "timezone_type": 3,
+                "timezone": "Asia/Jakarta"
+            },
+            "plain_code_next": 1,
+            "photos": [],
+            "weight": 350,
+            "unlimited": 0,
+            "publish_web": 1,
+            "flash_price": 0,
+            "flash_date": "0000-00-00 00:00:00",
+            "keywords": [
+                {
+                    "text": "Ant",
+                    "id": 145
+                }
+            ]
+        }
+    ],
+    "type": "parent",
+    "local": 0,
+    "status": "active",
+    "description": "PRE ORDER 21 Hari | Bahan : Cotton Madina | Sifat bahan : Lembut, Menyerap Keringat | Ukuran : Small; Lingkar Dada 93 cm, Panjang Baju 135 cm, Panjang lengan 55 cm ) | Detail : Wudhlu dan Busui Friendly, Saku Luar",
+    "currency": "Rp.",
+    "plain_price": "330000.0000",
+    "price_before_discount": "0.0000",
+    "price": "330.000",
+    "publish": "",
+    "code": "P3064",
+    "plain_code": "P3064",
+    "updated_at": {
+        "date": "2019-04-25 10:05:15.000000",
+        "timezone_type": 3,
+        "timezone": "Asia/Jakarta"
+    },
+    "photos": [
+        "https://sistemtoko.com/img/user/hijja/product/kv5ukp-edit-img-0157-1-1-jpg.JPG",
+        "https://sistemtoko.com/img/user/hijja/product/xmpdcr-edit-img-0180-1-jpg.JPG"
+    ],
+    "weight": 350,
+    "unlimited": 0,
+    "publish_web": 1,
+    "keywords": [
+        {
+            "text": "Ant",
+            "id": 145
+        }
+    ]
+}
+
