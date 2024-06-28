@@ -26,26 +26,25 @@ const ApiProductList = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 ">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {productsData.map(product => (
-          <div key={product.id} className="bg-white rounded-lg overflow-hidden shadow-md">
+          <div key={product.id} className=" rounded-lg overflow-hidden shadow-md">
             <Link to={`/api-product-detail/${product.id}`}> {/* Link untuk navigasi ke detail produk */}
               <img src={product.photo} alt={product.name} className="w-full h-64 object-cover object-center cursor-pointer" />
             </Link>
-            <div className="p-4">
-              <h2 className="text-xl font-semibold text-gray-800">{product.name}</h2>
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-gray-900 font-bold">{product.price}</span>
+            <div className="p-4 ">
+              <h2 className="text-center text-xl font-semibold text-white">{product.name}</h2>
+              <div className=" mb-4">
+                <span className=" text-whitefont-small">{product.price}</span>
               </div>
               <div className="mb-4">
-                <label htmlFor={`combined-variants-${product.id}`} className="block text-sm font-medium text-gray-700">Combined Variants:</label>
-                // Select untuk memilih varian
-<select
-  id={`variant-${product.id}`}
-  onChange={handleVariantChange}
-  className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
->
+            
+          <select
+            id={`variant-${product.id}`}
+            onChange={handleVariantChange}
+            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-black"
+          >
   {/* Opsi varian dari produk parent */}
   {product.plain_varian.map(varian => (
     <option key={varian.id} value={varian.id}>

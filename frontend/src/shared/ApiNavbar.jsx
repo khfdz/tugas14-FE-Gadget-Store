@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ApiContext } from '../context/ApiContext';
-import HijjaLogo from '../../public/images/home-image/hijja.jpg';
+import HijjaLogo from '../../public/images/home-image/hijja.png';
 
 const ApiNavbar = () => {
-  const { pagesData, categoriesData, setSearchName } = useContext(ApiContext);
+  const { pagesData, categoriesData, searchName, setSearchName } = useContext(ApiContext);
   const [showPages, setShowPages] = useState(false);
   const [showCategories, setShowCategories] = useState(false);
   const [searchInput, setSearchInput] = useState('');
@@ -22,29 +22,29 @@ const ApiNavbar = () => {
   }, [searchInput, setSearchName]);
 
   return (
-    <nav className="shadow-lg ml-12 mr-8">
+    <nav className="shadow-lg mt-1 mb-4">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           {/* Left part of the navbar */}
           <div className="flex-shrink-0">
-            <img className="w-40" src={HijjaLogo} alt="Hijja Logo" />
+            <img className="w-44 " src={HijjaLogo} alt="Hijja Logo" />
           </div>
 
           {/* Center part of the navbar */}
-          <div className="flex-1 flex justify-center sm:justify-start grid grid-row-2">
-            <p>
+          <div className="flex-1 flex justify-center sm:justify-start grid grid-row-2 mt-2 ml-4">
+            <p className='huruf pb-2'>
               Hijja Indonesia
             </p>
-            <div className="flex space-x-4">
+            
+            <hr/>
+            <div className="flex space-x-14 mb-2">
               <Link to="/api" className="nav-link">Home</Link>
-
+            
               <button onClick={toggleCategories} className="nav-link">Brand</button>
               <button onClick={togglePages} className="nav-link">Information</button>
               <Link to="/api-blog" className="nav-link">Blog</Link>
             </div>
           </div>
-
-          {/* Right part of the navbar */}
           <div className="flex items-center space-x-4">
             <input
               className="text-black"
@@ -53,7 +53,8 @@ const ApiNavbar = () => {
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
             />
-            {/* Cart button (text example) */}
+
+
             <button className="nav-link">Cart</button>
           </div>
         </div>
@@ -61,7 +62,7 @@ const ApiNavbar = () => {
 
       {/* Dropdown menu */}
       {showCategories && (
-        <div className="absolute mt-2 w-48 bg-white shadow-lg origin-top-right right-0">
+        <div className="absolute w-48 bg-white shadow-lg ml-64 ">
           <div className="py-1">
             {categoriesData.length > 0 ? (
               categoriesData.map((category) => (
@@ -82,7 +83,7 @@ const ApiNavbar = () => {
 
       {/* Dropdown menu */}
       {showPages && (
-        <div className="absolute mt-2 w-48 bg-white shadow-lg origin-top-right right-0">
+        <div className="absolute w-48 bg-white shadow-lg ml-96">
           <div className="py-1">
             {pagesData.length > 0 ? (
               pagesData.map((page) => (
