@@ -20,18 +20,23 @@ const ApiInformation = () => {
   const formattedDate = format(new Date(updated_at), 'EEEE, MMMM dd, yyyy');
 
   return (
-    <div className="api-information mr-12 ml-12 ">
+    <div className="">
       <Navbar />
-      <div className='background'>
-          <p className="bg-nt06 flex items-center pl-4 h-12 text-sm">
+          <p className="mr-8 ml-8 bg-nt06 flex items-center pl-4 h-12 text-sm">
       Home / {page_title}
     </p>
+      <div className='mr-12 ml-12'>
 
 
       </div >
-      <div className='ml-4'>
-      <h1 className='text-3xl mb-2 mt-8'>{page_title}</h1>
-      <p className='mb-4'>by HIJJA</p>
+      <div className='mr-12 ml-12'>
+      <h1 className='text-3xl mb-2 mt-8 text-colorsHijja1 '>{page_title}</h1>
+
+      <p className='mb-2'>by&nbsp;
+        <a href='https://hijja.sistemtoko.com' target='_blank' rel='noopener noreferrer' className='text-colorsHijja1 text-xl '>
+          HIJJA
+        </a>
+      </p>
       <hr />
       <p className='mb-4 mt-4'>Posted on {formattedDate}</p>
       <hr />

@@ -61,9 +61,9 @@ export default {
         ellipse3: "#E59500",
         ellipse4: "#0A568E",
 
-        navActive: "#00A3FF"
+        navActive: "#00A3FF",
 
-
+        colorsHijja1: "#cb9d4e"
 
     },
 

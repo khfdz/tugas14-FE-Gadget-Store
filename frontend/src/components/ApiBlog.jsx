@@ -21,7 +21,7 @@ const ApiBlog = () => {
                         <div key={blogEntry.id} className="col-md-4 mb-4">
                             <div className="card">
                                 <Link to={`/api-article/${blogEntry.slug}`} onClick={() => setSlug(blogEntry.slug)}>
-                                    <img className="card-img-top" src={`https://sistemtoko.com/img/user/hijja/blog/${blogEntry.img}`} alt={blogEntry.title} />
+                                    <img className="card-img-top border-8 " src={`https://sistemtoko.com/img/user/hijja/blog/${blogEntry.img}`} alt={blogEntry.title} />
                                 </Link>
                                 <div className="card-body">
                                     <h5 className="card-title text-center mt-2" style={{ textTransform: 'uppercase' }}>{blogEntry.title}</h5>

@@ -7,12 +7,14 @@ import ApiFooter from '../shared/ApiFooter';
 
 function Api() {
   return (
-    <div className='ml-12 mr-12'> 
+    <div>
+    <div className=''> 
       
       <ApiNavbar />
       
       <ApiProductList />
       <ApiFooter />
+    </div>
     </div>
   );
 }

@@ -21,16 +21,24 @@ const ApiArticle = () => {
     }
 
     return (
-        <div className='mr-12 ml-12'>
+        <div className=''>
             <Navbar />
-            <div className="container mx-auto px-4">
+                <p className="mr-8 ml-8 bg-nt06 flex items-center pl-4 h-12 text-sm">
+      Home / {articleData.page_title}
+    </p>    
+            <div className=" container mx-auto px-4">
                 <div className="article-content">
-                    <h2 className='text-3xl '>{articleData.page_title}</h2>
-                    <p>by {articleData.user.author} </p>
+        
+                    <h2 className='text-3xl mt-8 text-colorsHijja1 mb-2'>{articleData.page_title}</h2>
+                    <p className='mb-2'>by&nbsp;
+        <a href='https://hijja.sistemtoko.com' target='_blank' rel='noopener noreferrer' className='text-colorsHijja1 text-xl '>
+          HIJJA
+        </a>
+      </p>
                     <hr />
                     <p className='mt-4 mb-4'>Posted on {formattedDate}</p>
                     <hr />
-                    <img className='mb-4 mt-4' src={`${articleData.basePathImage}/${articleData.page_img}`} alt={articleData.page_title} />
+                    <img className='mb-8 mt-8' src={`${articleData.basePathImage}/${articleData.page_img}`} alt={articleData.page_title} />
                     <div className='text-sm ' dangerouslySetInnerHTML={{ __html: articleData.page_body }} />
                 </div>
             </div>

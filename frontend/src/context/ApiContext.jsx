@@ -6,22 +6,20 @@ export const ApiProvider = (props) => {
   const [pagesData, setPagesData] = useState([]);
   const [apiData, setApiData] = useState(null);
   const [configData, setConfigData] = useState(null);
-  const [apiProductsData, setApiProductsData] = useState([]);
-  const [productsData, setProductsData] = useState(null);
+  const [apiProductsData, setApiProductsData] = useState(null); // Gunakan null untuk membedakan belum dimuat dengan belum ada data
+  const [productsData, setProductsData] = useState([]);
   const [detailProductData, setDetailProductData] = useState(null);
   const [variantProductData, setVariantProductData] = useState(null);
   const [apiBlog, setApiBlog] = useState([]);
   const [blogData, setBlogData] = useState(null);
-  const [apiArticle, setApiArticle] = useState(null); // State untuk data artikel
-  const [slug, setSlug] = useState(null); // State untuk menyimpan slug
+  const [apiArticle, setApiArticle] = useState(null);
+  const [slug, setSlug] = useState(null);
   const [apiCategories, setApiCategories] = useState([]);
   const [categoriesData, setCategoriesData] = useState(null);
 
   const [page, setPage] = useState(1);
   const [searchName, setSearchName] = useState('');
   const [sorting, setSorting] = useState('');
-
-  
 
   useEffect(() => {
     const fetchApiWebInfo = async () => {
@@ -33,8 +31,8 @@ export const ApiProvider = (props) => {
         const data = await response.json();
         setApiData(data);
         if (data.status === 0) {
-          setPagesData(data.data.pages); // Set pagesData if data is fetched successfully
-          setConfigData(data.data.config); // Set configData if data is fetched successfully
+          setPagesData(data.data.pages);
+          setConfigData(data.data.config);
         } else {
           throw new Error('Failed to fetch pages data');
         }
@@ -49,17 +47,19 @@ export const ApiProvider = (props) => {
   useEffect(() => {
     const fetchApiProducts = async () => {
       try {
-
         const response = await fetch(`https://sistemtoko.com/public/hijja/product?page=${page}&sorting=${sorting}&categories=all&search_name=${searchName}`);
         if (!response.ok) {
           throw new Error('Failed to fetch products data');
         }
         const data = await response.json();
-        setApiProductsData(data);
 
-        if (data.aaData) {
-          setProductsData(data.aaData);
+        if (page === 1) {
+          setProductsData(data.aaData); // Hanya set produk pertama kali
+        } else {
+          setProductsData(prevProducts => [...prevProducts, ...data.aaData]); // Tambahkan produk berikutnya
         }
+        
+        setApiProductsData(data); // Tetap set apiProductsData untuk memantau status dan info lainnya
       } catch (error) {
         console.error('Error fetching products data:', error);
       }
@@ -82,7 +82,9 @@ export const ApiProvider = (props) => {
       }
     };
 
-    fetchDetailProduct(props.productId);
+    if (props.productId) {
+      fetchDetailProduct(props.productId);
+    }
 
   }, [props.productId]);
 
@@ -100,7 +102,10 @@ export const ApiProvider = (props) => {
       }
     };
 
-    fetchVariantProduct(props.productId);
+    if (props.productId) {
+      fetchVariantProduct(props.productId);
+    }
+
   }, [props.productId]);
 
   useEffect(() => {
@@ -127,21 +132,20 @@ export const ApiProvider = (props) => {
   useEffect(() => {
     const fetchApiArticle = async (slug) => {
       try {
-        const response = await fetch(`https://sistemtoko.com/public/hijja/article/${slug}`);
-        if (!response.ok) {
-          throw new Error('Failed to fetch article data');
+        if (slug) {
+          const response = await fetch(`https://sistemtoko.com/public/hijja/article/${slug}`);
+          if (!response.ok) {
+            throw new Error('Failed to fetch article data');
+          }
+          const data = await response.json();
+          setApiArticle(data);
         }
-        const data = await response.json();
-        setApiArticle(data);
-
       } catch (error) {
         console.error('Error fetching article data:', error);
       }
     };
 
-    if (slug) {
-      fetchApiArticle(slug); // Panggil fetchApiArticle hanya jika slug tersedia
-    }
+    fetchApiArticle(slug);
 
   }, [slug]);
 
@@ -220,33 +224,30 @@ export const ApiProvider = (props) => {
   useEffect(() => {
     console.log('Search Name:', searchName);
   }, [searchName]);
-  
 
-
-  // Memastikan props.slug diperbarui dan disimpan di state slug
   useEffect(() => {
     setSlug(props.slug);
   }, [props.slug]);
 
-  if (!apiData || !apiProductsData) {
+  if (!apiData || !productsData.length) { // Menunggu sampai ada data produk yang dimuat
     return <div>Loading...</div>;
   }
 
   return (
-    <ApiContext.Provider value={{ 
-      apiData, 
-      pagesData, 
-      configData, 
-      apiProductsData, 
-      productsData, 
-      detailProductData, 
-      variantProductData, 
-      apiBlog, 
-      blogData, 
-      apiArticle, 
-      setSlug, 
-      slug, 
-      categoriesData, 
+    <ApiContext.Provider value={{
+      apiData,
+      pagesData,
+      configData,
+      apiProductsData,
+      productsData,
+      detailProductData,
+      variantProductData,
+      apiBlog,
+      blogData,
+      apiArticle,
+      setSlug,
+      slug,
+      categoriesData,
       apiCategories,
       searchName,
       setSearchName,
@@ -254,9 +255,7 @@ export const ApiProvider = (props) => {
       setSorting,
       page,
       setPage
-
-      
-      }}>
+    }}>
       {props.children}
     </ApiContext.Provider>
   );
