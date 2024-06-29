@@ -7,7 +7,6 @@ import ApiFooter from '../shared/ApiFooter';
 const ApiBlog = () => {
     const { blogData, setSlug } = useContext(ApiContext);
 
-    // Check if blogData is null or undefined
     if (!blogData) {
         return <div>Loading...</div>;
     }

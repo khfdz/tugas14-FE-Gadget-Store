@@ -1,5 +1,5 @@
 import React from 'react';
-import iconRight from '../images/icon/icon_right.png'; // Pastikan jalur menuju ikon benar
+import iconRight from '../images/icon/icon_right.png'; 
 
 const Banner0 = ({ title, breadcrumbs }) => {
     return (

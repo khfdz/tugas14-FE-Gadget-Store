@@ -7,7 +7,6 @@ import CardProduct2 from "../shared/CardProduct2";
 import BoxCategories from "../shared/BoxCategories";
 import Banner0 from '../shared/Banner0';
 import '../style/Shop.css';
-import { Link } from 'react-router-dom';
 import { useBoxCategoriesContext } from '../context/BoxCategoriesContext';
 
 const Shop = () => {
@@ -129,7 +128,7 @@ const Shop = () => {
                                 >
                                     Popular
                                 </button>
-                                {/* Tambah opsi sorting lainnya jika diperlukan */}
+                       
                             </div>
                         )}
                     </div>

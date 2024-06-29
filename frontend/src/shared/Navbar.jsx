@@ -46,7 +46,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='md:px-14 p-9 mx-auto text-pr09 bg-nt09 text-white rounded-bl-cusnavbl rounded-br-cusnavbr fixed top-0 right-0 left-0 text-2xl'>
+            <nav className='md:px-14 p-6 mx-auto text-pr09 bg-nt09 text-white rounded-bl-cusnavbl rounded-br-cusnavbr fixed top-0 right-0 left-0 '>
                 <div className='text-2xl mx-auto flex justify-between font-small'>
                     <div className='space-x-6 md:flex'>
                         <NavLink to='/' className='lg:flex hover:text-secondary text-nt00'>

@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
-import userData from '../DataJson/user.json'; // Import data from user.json
+import userData from '../DataJson/user.json'; 
 
 export const UserContext = createContext();
 
@@ -7,7 +7,6 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    // Check if user is already logged in
     const storedUser = localStorage.getItem('user');
     if (storedUser) {
       const parsedUser = JSON.parse(storedUser);
@@ -15,7 +14,7 @@ export const UserProvider = ({ children }) => {
       if (isValidUser) {
         setUser(parsedUser);
       } else {
-        localStorage.removeItem('user'); // Clear invalid user from localStorage
+        localStorage.removeItem('user'); e
       }
     }
   }, []);
@@ -24,7 +23,7 @@ export const UserProvider = ({ children }) => {
     const foundUser = userData.users.find(user => user.email === email && user.password === password);
     if (foundUser) {
       setUser(foundUser);
-      localStorage.setItem('user', JSON.stringify(foundUser)); // Save user to localStorage
+      localStorage.setItem('user', JSON.stringify(foundUser)); 
       return true;
     }
     return false;
@@ -32,7 +31,7 @@ export const UserProvider = ({ children }) => {
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('user'); // Remove user from localStorage
+    localStorage.removeItem('user');
   };
 
   return (

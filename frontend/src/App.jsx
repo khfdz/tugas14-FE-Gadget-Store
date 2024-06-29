@@ -25,8 +25,8 @@ function App() {
     <Router>
       <ApiProvider>
       <UserProvider>
-      <CardProduct1Provider> {/* Letakkan CardProduct1Provider di atas Routes */}
-      <BoxCategoriesProvider> {/* Letakkan BoxCategoriesProvider di atas Routes */}
+      <CardProduct1Provider> 
+      <BoxCategoriesProvider> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

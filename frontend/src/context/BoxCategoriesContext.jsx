@@ -10,7 +10,6 @@ export const BoxCategoriesProvider = ({ children }) => {
     const [maxPrice, setMaxPrice] = useState('');
     const [sortBy, setSortBy] = useState('');
 
-    // Filter products based on current context state
     const filterProducts = (products) => {
         return products.filter(product => {
             if (searchTerm && !product.name.toLowerCase().includes(searchTerm.toLowerCase())) {

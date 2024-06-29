@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import iconStar from '../images/icon/iconStar.png';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Import icons from react-icons library
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; 
 import reviewData from '../../src/DataJson/review.json';
 
 const ReviewSection = ({ productId }) => {
@@ -8,8 +8,7 @@ const ReviewSection = ({ productId }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-        // Filter reviews based on productId and limit to 5 reviews
-        const filteredReviews = reviewData.reviews.filter(review => review.productId === productId);
+               const filteredReviews = reviewData.reviews.filter(review => review.productId === productId);
         setDisplayedReviews(filteredReviews.slice(currentIndex, currentIndex + 5));
     }, [productId, currentIndex]);
 

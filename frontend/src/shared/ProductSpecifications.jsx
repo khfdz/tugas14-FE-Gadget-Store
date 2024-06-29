@@ -1,5 +1,3 @@
-// shared/ProductSpecifications.jsx
-
 import React from 'react';
 
 const ProductSpecifications = ({ product }) => {

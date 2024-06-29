@@ -2,22 +2,20 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ApiContext } from '../context/ApiContext';
 import Navbar from '../shared/ApiNavbar';
-import { format } from 'date-fns'; // Import format function from date-fns
+import { format } from 'date-fns'; 
 import ApiFooter from '../shared/ApiFooter';
 
 const ApiInformation = () => {
   const { id } = useParams();
   const { pagesData } = useContext(ApiContext);
   const pageData = pagesData.find(page => page.page_slug === id);
+  const { page_title, page_body, updated_at } = pageData;
+  const formattedDate = format(new Date(updated_at), 'EEEE, MMMM dd, yyyy');
 
   if (!pageData) {
     return <div>Loading...</div>;
   }
 
-  const { page_title, page_body, updated_at } = pageData;
-
-  // Transform updated_at to the desired format
-  const formattedDate = format(new Date(updated_at), 'EEEE, MMMM dd, yyyy');
 
   return (
     <div className="">

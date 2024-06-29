@@ -15,7 +15,7 @@ const ApiProductList = () => {
   };
 
   const loadMoreProducts = () => {
-    setPage(page + 1); // Menambah halaman saat tombol "Load More" ditekan
+    setPage(page + 1); 
   };
 
   if (!Array.isArray(productsData) || productsData.length === 0) {
@@ -24,7 +24,7 @@ const ApiProductList = () => {
 
   const addToCart = (productName, selectedVariant) => {
     console.log(`Added ${productName} (${selectedVariant}) to cart`);
-    // Additional logic here as needed
+   
   };
 
   return (

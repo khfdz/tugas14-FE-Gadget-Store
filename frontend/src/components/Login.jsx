@@ -29,10 +29,7 @@ const Login = () => {
 
   return (
     <div className="flex h-screen relative">
-      {/* Background Image */}
       <img src={imageLogin} alt="Login" className="absolute inset-0 object-cover w-full h-full" />
-      
-      {/* Form Sign In */}
       <div className="absolute right-0  flex-col items-center justify-center h-full w-1/2 pr-20 pl-20 pt-20 bg-nt07 rounded-lg">
         <h2 className="text-4xl font-bold mb-6 text-center mt-8">Sign In</h2>
 
@@ -78,8 +75,6 @@ const Login = () => {
           <span className="text-md">Sign In with Google</span>
         </button>
 
-        
-        {/* Link to Registration Page */}
         <p className="text-md text-center">Don't have an account? <Link to="/register" className="text-colorPrimary1">Sign Up</Link></p>
       </div>
     </div>

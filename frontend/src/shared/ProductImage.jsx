@@ -1,5 +1,3 @@
-// shared/ProductImage.jsx
-
 import React from 'react';
 
 const ProductImage = ({ selectedImage, imagesToShow, handleClickImage }) => {

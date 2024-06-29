@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useBoxCategoriesContext } from '../context/BoxCategoriesContext';
 import productsData from '../DataJson/product.json';
-import reviewData from '../DataJson/review.json'; // Assuming you have imported review data
+import reviewData from '../DataJson/review.json'; 
 
 function formatPrice(price) {
     const formattedPrice = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -12,40 +12,32 @@ function formatPrice(price) {
 const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, searchTerm, selectedCategories, selectedBrands, minPrice, maxPrice, sortBy }) => {
     const { filterProducts } = useBoxCategoriesContext();
 
-    // Function to calculate total stars for a product
     const calculateTotalStars = (productId) => {
         const reviews = reviewData.reviews.filter(review => review.productId === productId);
         return reviews.reduce((totalStars, review) => totalStars + review.stars, 0);
     };
 
-    // Filter products based on context state
-    const filteredProducts = filterProducts(productsData.products);
+   const filteredProducts = filterProducts(productsData.products);
 
-    // Sorting logic
     if (sortBy === 'priceAsc') {
         filteredProducts.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
     } else if (sortBy === 'priceDesc') {
         filteredProducts.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
     } else if (sortBy === 'popular') {
-        // Sort by popularity (highest total stars)
         filteredProducts.sort((a, b) => {
             const totalStarsA = calculateTotalStars(a.id);
             const totalStarsB = calculateTotalStars(b.id);
-            return totalStarsB - totalStarsA; // Sort descending by total stars
+            return totalStarsB - totalStarsA; 
         });
     }
 
-    // Apply other filters (search term, categories, brands, price range)
     let filteredItems = filteredProducts.filter(product => {
-        // Filter by search term
         if (searchTerm && !product.name.toLowerCase().includes(searchTerm.toLowerCase())) {
             return false;
         }
-        // Filter by selected categories
         if (selectedCategories.length > 0 && !selectedCategories.includes(product.category)) {
             return false;
         }
-        // Filter by selected brands
         if (selectedBrands.length > 0 && !selectedBrands.includes(product.brand)) {
             return false;
         }
@@ -67,14 +59,16 @@ const CardProduct2 = ({ currentPage, itemsPerPage, handlePageChange, searchTerm,
         <div>
         <div className="grid grid-cols-3 gap-6 ml-8">
             {currentItems.map(({ id, name, price, image }) => (
-                <div key={id} className="bg-nt09 rounded-3xl p-1 shadow-lg text-center">
+                <div key={id} className="bg-nt09 rounded-3xl p-1 shadow-lg text-center grid grid-row-2">
                     <Link to={`/detail/${id}`}>
-                        <div className="relative w-full items-center justify-center h-48 mb-6"> {/* Fixed height for the image container */}
-                            <img src={`images/home-image/product1/${image[0]}`} alt="Product" className="mt-4  items-center justify-center w-full " />
+
+                        <div className="flex lg:w-[200px] h-[200px]  items-center justify-center  mb-4"> {/* Fixed height for the image container */}
+                            <img src={`images/home-image/product1/${image[0]}`} alt="Product" className="mt-4  items-center justify-center " />
                         </div>
-                        <div className="h-24 "> {/* Fixed height for the text container */}
-                            <h2 className="font-semibold text-xl mb-2 ">{name}</h2>
-                            <p className="text-md ">{formatPrice(price)}</p>
+
+                        <div className="h-18  "> {/* Fixed height for the text container */}
+                            <h2 className="font-semibold text-md ">{name}</h2>
+                            <p className="text-sm mb-2">{formatPrice(price)}</p>
                         </div>
                     </Link>
                 </div>

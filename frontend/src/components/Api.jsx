@@ -1,5 +1,3 @@
-// Api.jsx
-
 import React from 'react';
 import ApiNavbar from '../shared/ApiNavbar';
 import ApiProductList from '../shared/ApiProductList';

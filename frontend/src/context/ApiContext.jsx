@@ -6,7 +6,7 @@ export const ApiProvider = (props) => {
   const [pagesData, setPagesData] = useState([]);
   const [apiData, setApiData] = useState(null);
   const [configData, setConfigData] = useState(null);
-  const [apiProductsData, setApiProductsData] = useState(null); // Gunakan null untuk membedakan belum dimuat dengan belum ada data
+  const [apiProductsData, setApiProductsData] = useState(null); 
   const [productsData, setProductsData] = useState([]);
   const [detailProductData, setDetailProductData] = useState(null);
   const [variantProductData, setVariantProductData] = useState(null);
@@ -54,12 +54,12 @@ export const ApiProvider = (props) => {
         const data = await response.json();
 
         if (page === 1) {
-          setProductsData(data.aaData); // Hanya set produk pertama kali
+          setProductsData(data.aaData); 
         } else {
-          setProductsData(prevProducts => [...prevProducts, ...data.aaData]); // Tambahkan produk berikutnya
+          setProductsData(prevProducts => [...prevProducts, ...data.aaData]); 
         }
         
-        setApiProductsData(data); // Tetap set apiProductsData untuk memantau status dan info lainnya
+        setApiProductsData(data); 
       } catch (error) {
         console.error('Error fetching products data:', error);
       }
@@ -229,7 +229,7 @@ export const ApiProvider = (props) => {
     setSlug(props.slug);
   }, [props.slug]);
 
-  if (!apiData || !productsData.length) { // Menunggu sampai ada data produk yang dimuat
+  if (!apiData || !productsData.length) { 
     return <div>Loading...</div>;
   }
 

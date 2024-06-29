@@ -5,14 +5,13 @@ import ApiNavbar from './ApiNavbar';
 import ApiFooter from './ApiFooter';
 
 const ApiProductDetail = () => {
-  const { id } = useParams(); // Mengambil id dari URL menggunakan useParams()
-  const { productsData } = useContext(ApiContext); // Mendapatkan data produk dari context
+  const { id } = useParams(); 
+  const { productsData } = useContext(ApiContext);
 
-  const [selectedVariant, setSelectedVariant] = useState(null); // State untuk menyimpan varian yang dipilih
-  const [product, setProduct] = useState(null); // State untuk menyimpan data produk
+  const [selectedVariant, setSelectedVariant] = useState(null); 
+  const [product, setProduct] = useState(null); 
 
-  // Mengambil produk berdasarkan ID saat productsData berubah
-  useEffect(() => {
+   useEffect(() => {
     if (productsData) {
       const foundProduct = productsData.find(product => product.id === parseInt(id));
       if (foundProduct) {
@@ -23,16 +22,14 @@ const ApiProductDetail = () => {
     }
   }, [id, productsData]);
 
-  // Fungsi untuk menangani pemilihan varian
-  const handleVariantSelect = (variantId) => {
+   const handleVariantSelect = (variantId) => {
     if (product) {
       const selectedVariantData = product.childs.find(child => child.plain_varian[0].id === parseInt(variantId));
       setSelectedVariant(selectedVariantData);
     }
   };
 
-  // Menampilkan pesan jika produk tidak ditemukan atau productsData masih null
-  if (!productsData || !product) {
+   if (!productsData || !product) {
     return <div>Loading...</div>;
   }
 
@@ -41,8 +38,7 @@ const ApiProductDetail = () => {
       <ApiNavbar />
       <div className="bg-white rounded-lg overflow-hidden shadow-md">
         <div className="grid grid-cols-2">
-          {/* Gambar Produk */}
-          <div className="p-4 grid grid-rows-2 gap-4">
+      <div className="p-4 grid grid-rows-2 gap-4">
 
             <div>
             <img src={product.photo} alt={product.name} className="w-full h-auto" />
@@ -59,7 +55,7 @@ const ApiProductDetail = () => {
           </div>
           
           <div>
-          {/* Informasi Produk */}
+
           <div className={`p-4 ${selectedVariant ? 'hidden' : 'block'}`}>
             <h2 className="text-xl font-semibold text-gray-800">{product.name}</h2>
             <p className="text-gray-700 mb-2">Price: {product.price}</p>
@@ -67,7 +63,6 @@ const ApiProductDetail = () => {
             <p className="text-gray-700 mb-4">{product.description}</p>
           </div>
           
-          {/* Menampilkan informasi varian yang dipilih */}
           {selectedVariant && (
             <div className="p-4">
               <h3 className="text-lg font-medium text-gray-800">{selectedVariant.name}</h3>
@@ -81,7 +76,7 @@ const ApiProductDetail = () => {
           <div className="mb-4">
             <label htmlFor={`variant-${product.id}`} className="block text-sm font-medium text-gray-700">Select Variant:</label>
             <div className="grid grid-cols-2 gap-2">
-              {/* Tombol dari plain_varian */}
+  
               {product.plain_varian.map(varian => (
                 <button
                   key={varian.id}
@@ -91,7 +86,7 @@ const ApiProductDetail = () => {
                   {`${varian.value}`}
                 </button>
               ))}
-              {/* Tombol dari childs */}
+
               {product.childs.map(child => (
                 <button
                   key={child.plain_varian[0].id}
@@ -104,7 +99,7 @@ const ApiProductDetail = () => {
             </div>
             </div>
           </div>
-          {/* Button untuk memilih varian */}
+ 
       </div>
     </div>
     <ApiFooter />

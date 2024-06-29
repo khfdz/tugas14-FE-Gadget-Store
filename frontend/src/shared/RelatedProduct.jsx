@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import productsData from '../DataJson/product.json';
 import { useBoxCategoriesContext } from '../context/BoxCategoriesContext';
 
-// Definisikan fungsi formatPrice di sini
 function formatPrice(price) {
     const formattedPrice = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     return `IDR ${formattedPrice.replace(".000", "")}K`;
@@ -12,7 +11,6 @@ function formatPrice(price) {
 const RelatedProduct = ({ brand, productId, category }) => {
     const { setSelectedCategories, setSelectedBrands } = useBoxCategoriesContext();
 
-    // Filter produk berdasarkan brand dan id != productId
     const relatedProducts = productsData.products.filter(product => product.brand === brand && product.id !== parseInt(productId) && product.category === category);
 
     const handleViewMoreClick = () => {

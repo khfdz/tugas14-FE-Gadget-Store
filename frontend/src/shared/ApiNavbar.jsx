@@ -34,12 +34,12 @@ const ApiNavbar = () => {
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         
         <div className="relative flex items-center justify-between h-16">
-          {/* Left part of the navbar */}
+
           <div className="flex-shrink-0">
             <img className="w-44 " src={HijjaLogo} alt="Hijja Logo" />
           </div>
 
-          {/* Center part of the navbar */}
+
           <div className="flex items-center mt-2 ml-4 grid grid grid-cols-2 ">
 
             <div className=''>
