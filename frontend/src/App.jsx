@@ -42,7 +42,6 @@ function App() {
           <Route path="/api-blog" element={<ApiBlog />} />
           <Route path="/api-article/:slug" element={<ApiArticle />} />
           <Route path="/api-categories/:id" element={<ApiCategories />} />
-          
         </Routes>
       </BoxCategoriesProvider>
       </CardProduct1Provider>
